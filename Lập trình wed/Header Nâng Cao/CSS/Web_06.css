@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/11.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative; 
+}
+.color1{
+    color: #FF6600;
+}
+nav{
+    width: 80%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    color: #FF6600;
+}
+nav .logo{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+nav ul{
+    margin-right: -9%;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{   
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: #FF6600;
+}
+nav .buy a {   
+    color:#000;
+}
+nav .subnav{
+    position: absolute;
+    left: 22px;
+}
+.subnav{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;  
+    display: none;  
+}
+nav ul li:hover .subnav{
+    display: block;
+}
+.subnav li {
+    margin: 20px 0px;
+    padding-right: 20px;
+    width: 100%;
+    height: 100%;
+}
+.subnav li a{
+    text-transform: capitalize;
+}
+.content{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+}
+.content h1{
+    font-size: 45px;
+    color: #fff;
+    position: relative;
+}
+.content .btn button{
+    margin-top: 10px;   
+    cursor: pointer;
+    font-size: 15px;
+}
+.content .btn #btn1{
+    margin-right: 10px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #FF6600;
+}
+.content .btn #btn2{
+    background:none;
+    color: #FF6600;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border:1px solid rgb(230, 128, 33) ;
+}
+.content .btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

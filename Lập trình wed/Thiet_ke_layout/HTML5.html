@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các thẻ quan trọng trong HTML5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    .wrapper{
+        width:80% ;
+        height: 100vh;
+        background-color: aqua;
+        margin: 0 auto;
+    }
+    header .Shop{
+        text-align: center; 
+        height: 60px;
+        /* background-color: #9C9900; */
+        background-image: url(https://th.bing.com/th/id/R.ba661951b51b44adc459f6e1b5ba1451?rik=IqJn5dJP%2bVJ%2fIQ&pid=ImgRaw&r=0);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        color: #FFF;
+    }
+    nav{
+        height: 50px;
+        /* background-color: #00B2BF;      */
+    }
+    nav ul li{
+        float: left;
+        list-style-type: none;
+        margin: 10px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    nav ul li a:hover{
+        color:#00B2BF ;
+    }
+    nav .search{
+        padding: 10px;
+        float: right;
+        margin-right: 20px;       
+    }
+    article{
+        width: 100%;
+        height: 100vh;
+    }
+    header > hgroup{
+        width: 70%;
+        height: 100vh;
+        background-color: rgb(52, 21, 174);
+        float: left;
+    }
+    aside{
+        width: 30%;
+        height: 100vh;
+        background-color: #79378B;
+        float: right;
+    }
+    footer{
+        width: 100%;
+        height: 60px;
+        background-color: bisque;
+    }
+</style>
+<body>
+    <!-- Cấu trúc HTML5 thường dùng cùng với kết hợp các thẻ HTML5 -->
+    <div class="wrapper">
+        <header>
+            <h1 class="Shop" title="SHOP BÁN GIÀY UY TIN NHẤT">SHOP BÁN GIÀY</h1>
+         </header> <!--Phần chứa nguyên phần website header của trang -->
+        <nav> <!-- Phần nav chứa các data theo kiểu menu của trang -->
+            <ul>
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="">MẪU HÀNG</a></li>
+                <li><a href="">HỆ THỐNG</a></li>
+                <li><a href="">LIÊN HỆ</a></li>
+                <li><a href="">CHI NHÁNH</a></li>
+            </ul>
+            <div class="search">
+                <a href="#">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
+        </nav>
+         <section> <!-- Phần chứa nội dung chính cảu website -->
+            <section> 
+               <article> <!--  Thẻ này sau khi gọi ra thì có thể tạo thêm 1 thẻ header  -->
+                    <header>
+                        <hgroup>
+                            <h1>Phần chính của website</h1>
+                            <h2>Bản tin quốc tế</h2>
+                        </hgroup>
+                    </header>
+                    <aside> <!--Thẻ aside, thẻ này thường dùng để chứa khung sidebar như left-sidebar, right-sidebar. -->
+                        Phần bên aside của trang
+                    </aside>
+                </article>                 
+                <footer>
+                    Phần chân của trang 
+                </footer>
+            </section>
+        </section>
+    </div>
+</body>
+</html>

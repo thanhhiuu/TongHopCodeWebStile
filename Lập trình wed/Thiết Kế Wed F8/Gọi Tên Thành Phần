@@ -1,0 +1,26 @@
+Những phần thường gặp trên website:
+1. Header (Đầu Trang)
+2. Navigation (Điều hướng => Như menu thường được nẳm trong Header)
+3. Banner (Hình ảnh đặt trong website (Đầu trang))
+4. Breadcrrumb (Ví dụ Khóa học > HTML $ CSS điều này cho ta thấy thành phần này như là map cho ta biết ta đang ở đâu)
+5. Sidebar (Nó cũng giống như menu nhưng có nằm ở phía trái hoặc phải để ta chuyển trang được chỉnh chu hơn)
+6. Slider (Phần trượt qua lại để xem các hình ảnh, nội dung hay bất cứ thứ gì => miễn là nó trược qua lại được thì là Slider)
+7. Content (Phần nội dung của website)
+8. Footer (Chân của website)
+
+
+I.Thực hành 1:
+
+1. Phân tích
+    1. Header
+    2. Slider
+    3. Content
+        1. About
+        2. Tour
+        3. Contact
+        4. Image
+        5.
+    4. Footer
+2. Xây dựng base (Xây móng)
+3. Xây dựng từng phần theo phân tích
+4. Hoàn thiện

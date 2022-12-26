@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form File</title>
+</head>
+<body>
+        <form method="post" action="https://httpbin.org/anything" enctype="multipart/form-data">
+            <div class="form">
+                <label for="name">Họ vàn tên</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="ager">
+                <label for="Ager">Tuổi:</label>
+                <input type="text" name="Ager" required>
+            </div>
+            <div class="numberphone">
+                <label for="Numberphone">Số điện thoại</label>
+                <input type="tel" name="numberphone" id="number">
+            </div>
+            <div class="file">
+                <label for="file">avata</label>
+                <input type="file" name="avata" required>
+            </div>
+            <div class="select">
+                <label for="city">City</label>
+                <select>
+                    <option value="1">Đà nẵng</option>
+                    <option value="2">Hà nội</option>
+                    <option value="3">Bình Thuận</option>
+                    <option value="4">TP Hồ Chí Minh</option>
+                    <option value="5">Hà tĩnh</option>
+                </select>
+            </div>
+            <div class="email">
+                <label for="email">Gmail</label>
+                <input type="email" name="email">
+            </div>
+            <div class="range">
+                <label for="range">Khoảng cách</label>
+                <input type="number" name="range" min="0" max="1000" step="10">
+            </div>
+            <div class="textarea" >
+                <label for="textarea">Nhập nội dung:</label>
+                <input style="width: 100px; height: 100px;" type="textarea" name="bio">
+            </div>
+            <div class="submid">
+                <button type="submit">gửi</button>
+            </div>
+        </form>
+        <form action="https://httpbin.org/anything" method="post" enctype="multipart/form-data">
+            
+                <label for="url">Địa chỉ trang wed</label>
+                <input type="text" name="text">
+                <button type="submit">gửi</button>
+          
+        </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+ul li{
+    font-family: Arial, Helvetica, sans-serif; /*Kiểu chữ */
+    color: aquamarine;
+    background-color: blueviolet;
+    width: 100px ;
+    font-style: italic;
+}
+ol li{
+    font-family: 'Times New Roman', Times, serif;
+    color: aquamarine;
+    background-color: rgb(40, 197, 150);
+    width: 50px ;
+    font-weight: bold;
+}
+#usename,#name{
+    font-size: 60px;
+    color: rgb(235, 154, 32);
+    word-spacing: 10px; /*Khoảng cách giữa các từ*/
+    text-indent: 100px; /*Vị trí hiển thị chữ*/
+    text-shadow: 2px 3px 5px  crimson; /*Tạo bóng cho Font*/
+}
+#H{
+    color: blue;
+    font-size: 30px;
+    line-height: 100px; /* Khoảng các giữa các dòng*/
+}
+.r{
+    text-transform: uppercase; /*Chuyển đổi chữ in hoa*/
+    text-decoration: underline; /* Gạch chân*/
+}
+.t{
+    text-transform: lowercase; /* Chuyển đổi in thường */
+    text-decoration: line-through; /*Gạch giữa */
+}
+.h{
+    text-transform: none; /* Mặc định */
+    text-decoration: overline; /*Gạch trên */
+}
+img{
+    width: 200px;
+}
+#t1{
+    opacity: 0.2; /*Độ trong suốt của ảnh*/
+}
+#t2{
+    opacity: 0.5; /*Độ trong suốt của ảnh*/
+}
+#t3{
+    opacity: 1; /*Độ trong suốt của ảnh(1 là mặc định)*/
+}

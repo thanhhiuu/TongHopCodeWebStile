@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh họa các thuộc tính biến đổi</title>
+</head>
+<style>
+    .header{
+        background-color: yellow;
+        width: 400px;
+        height: 300px;
+        transition: 1s;
+        margin: 100px;
+    }
+    .header:hover{
+       
+        /* Xoay hình*/
+        transform: rotate(360deg);
+        /*Đẩy hình*/
+        transform: skewX(200deg);
+    }
+</style>
+<body>
+    <div class="header"></div>
+</body>
+</html>

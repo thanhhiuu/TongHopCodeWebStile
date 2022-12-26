@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuộc tính biến đổi</title>
+    <style>
+          .header{
+        background-color: yellow;
+        width: 400px;
+        min-height: 250px;
+        transition: 1s;
+        margin: 100px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: wheat;
+        position: relative;
+    }
+    .header img{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .header::after{
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;        
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        z-index: 2;
+        transition: 0.2s;
+    }
+    .header:hover::after{
+        width: 100%;
+    } 
+    .header1{
+        background-color: yellow;
+        width: 400px;
+        min-height: 250px;
+        transition: 1s;
+        margin: 100px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: wheat;
+        position: relative;
+    }
+    .header1 img{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .header1::before{
+        content: "";
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;        
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        z-index: 1;
+        transition: 0.2s;
+    }
+    .header1:hover::before{
+        height: 100%;
+    }
+    .header2{
+        background-color: yellow;
+        width: 400px;
+        min-height: 250px;
+        transition: 1s;
+        margin: 100px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: wheat;
+        position: relative;
+    }
+    .header2 img{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .header2::before{
+        content: "";
+        width: 100%;
+        height: 0;
+        bottom: 0;
+        right: 0;      
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        z-index: 1;
+        transition: 0.2s;
+    }
+    .header2:hover::before{
+        height: 100%;
+    }
+    .header3{
+        background-color: yellow;
+        width: 400px;
+        min-height: 250px;
+        transition: 1s;
+        margin: 100px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: wheat;
+        position: relative;
+        overflow: hidden;
+    }
+    .header3 img{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .header3::before{
+        content: "";
+        width: 0;
+        height:100%;
+        top: 0;
+        right: 0;      
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        z-index: 1;
+        transition: 0.2s;
+    }
+    .header3:hover::before{
+        width: 100%;       
+    }
+    .row{
+        width: 100%;
+        float: left;
+    }
+    .boxcerter{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .mr{
+        margin-right: 2%;
+    }
+    </style>
+</head>
+<body>
+    <div class="boxcenter">
+   <div class="header mr">
+            <img src="./images/img_1.png" alt="">
+            <!-- <div class="manche">FULL HD KHÔNG CHE</div> -->
+    </div>
+    <div class="header1 mr">
+            <img src="./images/img_1.png" alt="">
+            <!-- <div class="manche">FULL HD KHÔNG CHE</div> -->
+    </div>
+    <div class="header2 mr">
+        <img src="./images/img_1.png" alt="">
+        <!-- <div class="manche">FULL HD KHÔNG CHE</div> -->
+    </div>
+    <div class="header3 mr">
+        <img src="./images/img_1.png" alt="">
+        <!-- <div class="manche">FULL HD KHÔNG CHE</div> -->
+    </div> 
+</div>  
+</body>
+</html>

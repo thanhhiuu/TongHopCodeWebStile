@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de9c1de029.js" crossorigin="anonymous"></script>
+    <title>Thuộc tình biến đổi</title>
+    <style>
+         .header{
+        background-color: yellow;
+        width: 400px;
+        height: 200px;
+        transition: 1s;
+        margin: 100px;
+        padding: 10px 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: rgb(9, 8, 7);
+        position: relative;
+    }       
+    .header::before{
+        content: "";
+        position: absolute;
+        /* background-color: royalblue; */
+        width: 50px;
+        height: 23px;
+        top: 5px;
+        left: 8px;
+        transform: skewX(-15deg);
+        border-left: 5px solid red ;
+        
+    }
+    .header::after{
+        content:"";
+        text-align: center;
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: hotpink;
+        position: absolute;
+        /* top: calc(50% - 25px); */
+        top: 300px;
+        left: calc(50% - 25px);
+        border-radius: 100px;
+        transition: 0.5s;
+        /* opacity: 0; */
+        visibility: hidden;
+    }
+    .header:hover::after{
+        transform: translateY(-150px);  
+        visibility: visible;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        UNIX FATHSIOM
+    </div>
+    <i class="fa-brands fa-youtube"></i>
+</body>
+</html>

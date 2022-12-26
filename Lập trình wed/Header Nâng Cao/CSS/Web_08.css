@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+span {
+    color: #4eee;
+    font-size: 40px;
+}
+.wrapper {
+    height: 100vh;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.50)), url(../img/CatStore.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* style nav */
+.nav {
+    width: 90%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+.nav .logo {
+    font-size: 35px;
+    color: #fff;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+}
+.nav ul li a:hover {
+    color: #4eee;
+    transition: 0.5s;
+}
+.nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #4eee;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    transition: 0.5s;
+}
+.nav ul li a:hover:after {
+    width: 100%;
+}
+/* style search-buy-call */
+.search-buy-call .fa-search {
+    color: #000;
+    margin-right: 8px;
+    background-color: antiquewhite;
+    padding: 5px;
+    border-radius: 5px;     
+}
+.search-buy-call .fa-search:hover {
+    transform: scale(1.2);
+}
+.search-buy-call .fa-shopping-cart {
+    color: #000;
+    margin-right: 8px;
+    background-color: antiquewhite;
+    padding: 5px;
+    border-radius: 5px;  
+}
+.search-buy-call .fa-shopping-cart:hover {
+    transform: scale(1.2);
+}
+.search-buy-call .fa-phone {
+    color: #000;
+    margin-right: 8px;
+    background-color: antiquewhite;
+    padding: 5px;
+    border-radius: 5px;  
+}
+.search-buy-call .fa-phone:hover {
+    transform: scale(1.2);
+}
+/* style text-header */
+.text-header {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.text-header small {
+    color: #4eee;
+    letter-spacing: 1px;
+}
+.text-header h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-top: 15px;
+}
+.text-header span {
+    font-size: 50px;
+}
+.text-header p {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.text-header .btn-header {
+    margin-top: 15px;
+}
+.text-header .btn-header .btn1 {
+    padding: 10px 20px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.text-header .btn-header .btn1::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #4eee;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: -1;
+}
+.text-header .btn-header .btn1:hover:after {
+    width: 100%;
+    border: 1px solid #fff;
+}
+.text-header .btn-header .btn2 {
+    padding: 10px 20px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+.text-header .btn-header .btn2::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #4eee;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.2s;
+}
+.text-header .btn-header .btn2:hover:after {
+    width: 100%;
+    border: 1px solid #fff;
+    left: -1px;
+}

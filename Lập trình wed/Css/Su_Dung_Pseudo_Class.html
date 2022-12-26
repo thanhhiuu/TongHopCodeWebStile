@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng Pseudo_Clasd và các chức năng</title>
+    <style>
+        h1{
+            background-color: aqua;
+        }
+        a{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(39, 198, 198);
+        }
+        a:hover{
+            background-color: brown;
+            font-weight: bold;
+        }
+        li:first-child{
+            background-color: burlywood;
+        }
+        li:last-child{
+            background-color: aquamarine;
+        }
+        p{
+            display: none;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+        div:hover p{
+            display: block;
+        }
+       div.d{
+        width: 100px;
+        height: 200px;
+        border: 1px solid black;
+       }
+       .s:nth-child(odd){
+        background-color: aquamarine;
+       }
+       .s:nth-child(even){
+        background-color: rgb(140, 205, 29);
+       }
+    </style>
+</head>
+<body>
+        <h1>Pseudo_Class trong Css</h1>
+        <ul>
+            <li id="1">Ngôn ngữ C_shape</li>
+            <li id="2">Ngôn ngữ C++</li>
+            <li id="3">Ngôn ngữ Ruby</li>
+        </ul>
+        <a href="https://freetuts.net/tim-hieu-ve-pseudoclass-trong-css-1638.html">link của Pseudo_class nè</a>
+        <ul>
+            <li id="4">Ngôn ngữ C_shape</li>
+            <li id="5">Ngôn ngữ C++</li>
+            <li id="6">Ngôn ngữ Ruby</li>
+        </ul>
+        <hr>
+        <div>Ấn vào xem nào
+        <p>Có cái đb</p>
+        <div id="d">
+            <div class="s">Khối 1</div>
+            <div class="s">Khối 2</div>
+            <div class="s">Khối 3</div>
+            <div class="s">Khối 4</div>
+            <div class="s">Khối 5</div>
+            <div class="s">Khối 6</div>
+
+        </div>
+       
+</body>
+</html>

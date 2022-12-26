@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm thời gian</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Design_01.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">               
+                <div class="container">
+                    <h2>We Are Coming Soon</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    <br> Maxime architecto officiis quibusdam quis ut? 
+                    <br> Quasi assumenda eos iure, autem accusamus dolorum perspiciatis officiis facere accusantium soluta inventore asperiores et adipisci!</p>              
+               <div class="datetime">
+                <div class="box">
+                    <span id="day">00</span>
+                    <h3>Day</h3>
+                </div>
+                <div class="box">
+                    <span id="hour">00</span>
+                    <h3>Houres</h3>
+                </div>
+                <div class="box">
+                    <span id="minute">00</span>
+                    <h3>Minute</h3>
+                </div>
+                <div class="box">
+                    <span id="second">00</span>
+                    <h3>Second</h3>
+                </div>  
+                <div class="btn">
+                    <button type="button">Know more</button>
+                </div>             
+               </div>            
+                </div>   
+                <div class="img">
+                    <img src="../MEDIA/Create-bro.svg">
+                </div>
+        </div>       
+    </div>
+    <script>
+        let countDate = new Date('2022-12-25 00:00:00').getTime();
+
+        function countDown() {
+            let now = new Date().getTime();
+            gap = countDate - now;
+
+            let second = 1000;
+            let minute = second * 60;
+            let hour = minute * 60;
+            let day = hour * 24;
+
+            let d = Math.floor(gap  / (day));
+            let h = Math.floor((gap % (day)) / (hour));
+            let m = Math.floor((gap % (hour)) / (minute));
+            let s = Math.floor((gap % (minute)) / (second));
+            
+            document.getElementById('day').innerText = d;
+            document.getElementById('hour').innerText = h;
+            document.getElementById('minute').innerText = m;
+            document.getElementById('second').innerText = s;
+        }
+        setInterval( function() {
+            countDown();
+        },1000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các chức năng của Before và After</title>
+</head>
+<style>
+    #ad::before{
+        content: url(https://freetuts.net/upload/tut_post/images/2019/01/20/1637/css-pseudo-element-img.GIF);
+    }
+    /* ::before được sử dụng để chèn một số nội dung trước nội dung của phần tử */
+    #ad::after{
+        content: "Nhưng nhiều em";
+        
+    }
+    #ad{
+        border: 1px solid black;
+    }
+    /*::after dùng để chèn một số nội dung sau nội dung của phần tử. */
+    /* Cách 1: Cách thực thi các thẻ nâng cao*/
+     ul li{
+        color: rgb(238, 118, 20);
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 10px 5px 3px red;
+        text-indent: 10px;
+    }
+    /* ul.u1 li:hover{
+        display: block\;
+        background-color: rgb(158, 50, 50);
+    } */
+    div :hover ul.u1 li{
+        color: chartreuse;
+    }
+    ul.u1 li{
+        background-color: aqua;
+    }
+    ul.u2 li{
+        text-transform: none; /*<!--Kiểu chữ*/
+    }
+    /*Cách 2: thực thi trên thẻ kiểu ">" (truy vấn cố định)*/
+    ul > li{
+        color: rgb(238, 118, 20);
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 10px 5px 3px red;
+        text-indent: 10px;
+    }
+    ul.u1 > li{
+        background-color: aqua;
+    }
+    ul.u2 > li{
+        text-transform: none; /*Kiểu chữ*/
+    }
+</style>
+<body>
+    <a href="https://freetuts.net/tim-hieu-ve-pseudoelements-trong-css-1637.html">Link truy cập vào before và after</a>
+    <p id="ad">Anh yêu em lắm á !</p>
+    <div>
+    <ul class="u1">
+        <li title="Nhớ follow nha">Trang chủ</li>
+        <li>Liên hệ</li>
+        <li>Phòng chính
+            <ul class="u2">
+                <li>Hành chính</li>
+                <li>Remote( Làm việc từ xa)</li>
+                <li>Part time</li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</body>
+</html>

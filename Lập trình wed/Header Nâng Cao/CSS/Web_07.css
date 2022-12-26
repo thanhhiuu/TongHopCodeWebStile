@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.banner, .banner1, .banner2, .banner3 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+img {
+    width: 120%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom-out 10s linear infinite;
+    /* background-position: center;
+    background-size: cover; */
+}
+.banner-text {
+    width: 600px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    color: #FFF;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+}
+.banner-text h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.banner-text p {
+    font-size: 18px;
+    line-height: 1.4;
+
+}
+span {
+    width: 150px;
+    height: 2px;
+    background-color: #BD6B09;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.banner {
+    animation: Xe 12s linear infinite;
+}
+.banner1 {
+    animation: Xe1 12s linear infinite;
+}
+.banner2 {
+    animation: Xe2 12s linear infinite;
+}
+.banner3 {
+    animation: Xe3 12s linear infinite;
+}
+
+.banner-text1 {
+    animation-delay: 0s;
+}
+.banner-text2 {
+    animation-delay: 3s;
+}
+.banner-text3 {
+    animation-delay: 6s;
+}
+.banner-text4 {
+    animation-delay: 9s;
+}
+@keyframes Xe{
+    0%{
+        visibility: visible;
+    }
+     25%{
+        visibility: hidden;
+    }
+     50%{
+        visibility: hidden;
+    }
+     75%{
+        visibility: hidden;
+    }
+     100%{
+        visibility: visible;
+    }
+}
+@keyframes Xe1{
+    0%{
+        visibility: hidden;
+    }
+     25%{
+        visibility: hidden;
+    }
+     50%{
+        visibility: visible;
+    }
+     75%{
+        visibility: hidden;
+    }
+     100%{
+        visibility: hidden;
+    }
+}
+@keyframes Xe2{
+    0%{
+        visibility: hidden;
+    }
+     25%{
+        visibility: hidden;
+    }
+     50%{
+        visibility: hidden;
+    }
+     75%{
+        visibility: visible;
+    }
+     100%{
+        visibility: hidden;
+    }
+}
+@keyframes Xe3{
+    0%{
+        visibility: hidden;
+    }
+     25%{
+        visibility: hidden;
+    }
+     50%{
+        visibility: hidden;
+    }
+     75%{
+        visibility: hidden;
+    }
+     100%{
+        visibility: visible;
+    }
+}
+@keyframes zoom-out {
+    100%{
+        width: 100%;
+    }
+}
+@keyframes textup {
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+

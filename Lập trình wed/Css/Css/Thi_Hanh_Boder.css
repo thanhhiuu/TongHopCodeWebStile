@@ -1,0 +1,9 @@
+p.dotted{
+    border-style: dotted; border-width: 10px; border-radius: 100px;  /*Dùng các loại Boder (Boder Shorthand)*/
+   
+}
+p{
+    border: 5px solid olive ; /* Cách sử dụng tắt của boder*/ 
+    border-width: 10px; /*Độ dày của các Boder*/
+    border-radius: 100px; /* Bo tròn các Boder*/
+}

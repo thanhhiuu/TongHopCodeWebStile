@@ -1,0 +1,42 @@
+ul.a{
+    list-style-type: lower-alpha;
+    list-style-position: outside;
+}
+ul.b{
+    list-style-type: lower-greek;
+    list-style-position: outside;
+}
+ul.c{
+    list-style-type: lower-roman;
+    list-style-position:inside;   /*là thuộc tính dùng để thiết lập vị trí hiển thị của các đánh dấu mục của danh sách.
+                                    outside: đánh dấu mục của danh sách sẽ nằm bên ngoài các phần tử của danh sách
+                                    inside: đánh dấu mục của danh sách sẽ nằm bên trong các phần tử của danh sách. */
+}
+/* circle: giá trị hiển thị là hình tròn
+square:  giá trị hiển thị là hình vuông
+upper-roman: giá trị hiển thị là chữ la mã hoa như I, II, II, IV ...
+lower-roman: giá trị hiển thị là chữ la mã thường như i, ii, iii, iv ...
+upper-latin: giá trị hiển thị là chữ cái latin hoa như A, B, C ...
+lower-alpha: giá trị hiển thị là chữ cái alphabet như a, b, c ...
+none: không hiển thị gì cả
+decimal: giá trị hiển thị là số như 1, 2, 3 ...
+decimal-leading-zero: giá trị hiển thị là số nhưng sẽ thêm số 0 phía trước số, nếu số < 10 như 01, 02, 03 ...
+*/
+h1{
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 10px 10px 1px royalblue;
+}
+body{
+    color: rgb(86, 216, 84);
+    font-weight: bolder;
+    background-color: aqua;
+    font-family:'Times New Roman', Times, serif;
+    background-image: url("../Trasua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Thuộc tính ngắn gọn của Lisst-style */
+/* ul.a{
+    list-style: inside url("../Trasua.jpg") red ;
+} */

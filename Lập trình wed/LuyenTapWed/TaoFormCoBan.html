@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Form Đơn Giản</title>
+    <style>
+        table  td{
+            background-color: aquamarine;
+            padding: 5px 10px;/*Độ dài, rộng */
+           display: block;/*xuất hiện trên màn hình theo kiểu nào*/
+        }
+        select {
+            width: 250px;
+            text-decoration: underline;
+        }
+        input, textarea, option {
+            background-color: rgb(174, 174, 205);
+            border: 10px inset olivedrab;
+            text-decoration: underline;
+            text-indent: 200px;
+        }
+
+        body {
+            background-image: url('./hiucute.jpg');
+            background-repeat: repeat; background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        #radio, #checkbox, #btn {
+            text-shadow: 2px 4px 5px fuchsia;
+        } 
+    </style>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                  <td style="opacity:inherit ;">Họ và tên: </td>
+                 <td><Input type="text" id="txthoten" value=""></Input></td>
+            </tr>
+            <tr>
+                 <td id="radio">Nam:</td> 
+                  <td><Input type="radio"  id="chkgioitinh" value=""></Input></td>
+            </tr>
+            <tr>
+                <td id="checkbox"> Nữ:</td>
+                <td><input type="checkbox" id="chkgioitinh" value=""></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input type="button" id="btndangnhap" value="Xác Nhận"></td>
+            </tr>
+            <tr>
+                <td style="text-transform:uppercase ;">Ghi thêm (nếu có): </td>
+                <td><textarea name="textarea" id="txttarea" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td id="btn">Tạo Buttom Submit</td>
+                <td><input type="submit" value="Liên Hệ : 0393074090"></td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option value="">--Hãy Chon--</option>
+                        <option title="Ấn vào để chọn" value="">Phim tom và doremon</option>
+                        <option title="Ấn vào để chọn" value="">Shin cậu bé bút chì</option>
+                        <option title="Ấn vào để chọn" value="">Công chú Ori</option>
+                        <option title="Ấn vào để chọn" value="">Siêu nhân điện quan</option>
+                        <option title="Ấn vào để chọn" value="">Conna thám tử lừng danh</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

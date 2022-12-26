@@ -1,0 +1,15 @@
+span{
+    display: block;
+    background-color: rgb(148, 189, 36);
+}
+body{
+    width: 200px;
+    height: 100px;
+    border: 100px solid rebeccapurple;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: 10px;
+}
+img{
+    height: 100px;
+}

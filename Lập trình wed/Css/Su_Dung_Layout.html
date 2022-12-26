@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chức năng của layout</title>
+    <style>
+        .row{          
+            width: 100%;
+            float: left;
+        }
+        .bgc1{
+            background-color: #222 ;
+        }
+        .bgc2{
+            background-color: #666 ;
+        }
+        .bgc3{
+            background-color: #999;
+        }
+        #d1{
+            min-height: 100px;
+        }
+        #d2{
+            min-height: 200px;
+        }
+        #d3{
+            min-height: 100px;
+        }
+        .box{
+            height: 500px;
+            float: left;
+        }
+        #boxleft{
+            background-color: #999;
+            width: 20%;
+        }
+        #boxmid{
+            background-color: rgb(102, 36, 36);
+            width: 60%;
+        }
+        #boxright{
+            background-color: #999;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="d1" class="row bgc1"></div>
+        <div id="d2" class="row bgc2">
+            <div id="boxleft" class="box"></div>
+            <div id="boxmid" class="box"></div>
+            <div id="boxright" class="box"></div>
+        </div>
+        <div id="d3" class="row bgc3"></div>
+    </div>
+</body>
+</html>

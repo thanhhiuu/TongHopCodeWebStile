@@ -1,0 +1,36 @@
+Div{
+    background-color: yellow;
+    width: 500px;
+    height: 250px;
+    padding-left: 30px;
+    padding-right: 5px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    border: 20px inset rgb(217, 195, 28);
+    margin-top: 500px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 50px;
+    text-decoration: underline;
+}
+table{
+    border: 30px double rgb(64, 64, 5);
+    padding: 20px 50px 20px 30px;
+}
+/* Methods ngắn gọn của Padding: 20px 20px 20px 20x; => top, rightm, buttom, left. Trường hợp 4 giá trị (Có 1, 2, 3 trường hợp)*/
+/* Trường hợp có 3 giá trị thì là Top, (Left - Right), Buttom
+/* Methods ngắn gọn của Margin: 20px 20px 20px 20x; => top, rightm, buttom, left Trường hợp 4 giá trị (Có 1, 2, 3 trường hợp)*/
+
+
+/* margin-left: 20px : khoảng cách lề trái 20px 
+margin-top:20px : khoảng cách lề trên 20px
+margin-right: 20px : khoảng cách lề phải 20px
+margin-bottom: 20px : khoảng cách lề dưới 20px
+margin : 20px : tất cả lề trên, lề dưới, lề trái, lề phải đều có khoảng cách 20px  
+
+padding-left: 20px : khoảng cách lề trái so với nội dung bên trong 20px 
+padding-top:20px : khoảng cách lề trên so với nội dung bên trong 20px
+padding-right: 20px : khoảng cách lề so với nội dung bên trong phải 20px
+padding-bottom: 20px : khoảng cách so với nội dung bên trong lề dưới 20px
+padding : 20px : tất cả lề trên, lề dưới, lề trái, lề phải so với nội dung bên trong đều có khoảng cách 20px  */

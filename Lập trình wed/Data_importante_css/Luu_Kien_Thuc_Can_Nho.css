@@ -1,0 +1,637 @@
+ /* selector dùng để truy vấn đến các thẻ HTML. */
+ /*Link để truy cập vào wed dữ liệu: https://freetuts.net/ */
+ /* Background  */ 
+        /* Trong bài này chúng ta sẽ tìm hiểu một số thuốc tính backgrounds sau:
+
+        + background
+        + background-color
+        
+        + background-image
+        body{
+        background: url('https://freetuts.net/upload/config/images/hoc-lap-trinh-online.png');
+            }
+        
+        + background-repeat
+        + background-attachment
+        + background-position 
+        */
+
+        /* sử dụng thuộc tính background-repeat và thuộc tính này gồm các giá trị:
+
+        + no-repeat : không lặp
+        + repeat : cho phép lặp
+        + repeat-x : lặp theo chiều ngang
+        + repeat-y : lặp theo chiều đứng
+        */
+
+        /*  sử dụng thuộc tính background-position. Cấu trúc của nó là:
+        background-position: position1 position2
+        * Trong đó position1 và position2 gồm các giá trị sau:        
+        + bottom: ở dưới
+        + left: bên trái
+        + right: bên phải
+        + center: ở giữa
+        + top: ở trên 
+        */
+        
+        /* Nếu màn hình dài quá thì khi bạn lăn chuột background sẽ kéo theo nên nếu bạn muốn nó đứng im 
+        thì có thể sử dụng thuộc tính background-attachment. 
+        Thông thường chúng ta sử dụng hai thuộc tính:
+
+        + fixed: sẽ đứng im
+        + scroll: sẽ di chuyển theo khi kéo 
+        */
+
+
+/* Fonts */
+
+        /* 
+        + font-family là thuộc tính quyết định loại font nào sẽ được áp dụng. 
+        + font-size là thuộc tính dùng để thiết lập kích cỡ của chữ.
+        + font-weight là thuộc tính dùng để thiết lập độ đậm của chữ.
+        + font-style là thuộc tính dùng để thiết lập chữ in thường hoặc in nghiêng, đơn giản vậy thôi. 
+        */
+
+/* Text */
+
+        /* sử dụng thuộc tính text-transform với các thuộc tính:
+
+        + uppercase: chuyển đổi in hoa
+        + lowercase: chuyển đổi in thường
+        + none: không chuyển đổi gì cả (mặc định)
+        */
+
+        /* sử dụng thuộc tính text-align với các giá trị:
+
+        + center : hiển thị ngay giữa
+        + left: hiển thị bên trái
+        + right: hiển thị bên phải
+        + justify : hiển thị canh đều so với lề phải và lề trái */
+
+        /* sử dụng thuộc tính text-decoration với giá trị:
+
+        + underline: gạch chân
+        + none: bỏ gạch chân */
+
+        /* Nếu bạn muốn chữ hiển thị ở một vị trí nào đó tính từ góc trái trên cùng (tính theo pixels) 
+        thì bạn dùng thuộc tính text-indent. 
+        Thuộc tính này thường dùng để gắn trong nội dung thẻ a của logo và sau đó dùng nó để ẩn text đi.
+
+        Ví dụ: Cho nội dung bên trong thẻ div biến khỏi màn hình
+        Ta sử dụng text-indent và giá trị của nó là số pixel lớn hơn kích thước màn hình (tính theo số âm). 
+        * vertical-align
+        + vertical-align là thuộc tính cho phép mình chỉnh nội dung ở trên (top), ở dưới (bottom) hay ở giữa (center) theo chiều dọc.
+        */
+
+/*Links*/
+
+        /* Style các sự kiện (hover, visited, active, link)
+        Các sự kiện này xay ra khi chúng ta dùng chuột thao tác lên nó.
+
+        hover: Khi bạn hover chuột qua nó sẽ có tác dụng
+        visited: khi bạn click vào the a thì trạng thái của thẻ a đó là visited.
+        active: Khi bạn click vào thẻ a nhưng nhấn giữ chuột
+        link: thẻ a nào bạn chưa click lần nào thì nó sẽ có tác dụng */
+
+/*Boders*/
+
+        /* 
+        Border là thuộc tính CSS dùng để tạo đường viền bao quanh nội dung của phần tử HTML, nó nằm giữa padding và margin.
+        border-style là thuộc tính để thiết lập loại border nào sẽ được hiển thị.
+
+        * Những style chính là border hổ trợ như sau:
+        + dotted - border sẽ hiển thị là những dấu chấm
+        + dashed - border sẽ hiển thị nét đứt
+        + solid - border sẽ hiển thị đường thẳng liền mạch
+        + double - border sẽ hiển thị 2 đường thẳng
+        + groove - border sẽ hiển thị dạng rãnh 3D.
+        + ridge - border sẽ hiển thị dạng viền 3D.
+        + inset - border sẽ hiển thị dạng viền trong 3D. 
+        + outset - border sẽ hiển thị dạng viền đầu 3D. 
+        + none - sẽ không có border
+        + hidden - border sẽ  bị ẩn. 
+        */
+        
+        /* 
+        + border-width là thuộc tính để thiết lập độ rộng của border.
+        Các bạn có thể sử dụng CSS Unit như pt, px, em, rem ...  
+        hoặc là có thể dùng 3 giá trị sau: thin, medium, thick.
+        + border-color là thuộc tính để thiết lập màu sắc cho border
+        + border-radius là để thiết lập bo tròn cho border. Nghe hơi khó hiểu đúng không? Hãy xem qua ví dụ dưới đây để hiểu hơn.
+        + Border shorthand là cách viết ngắn gọn cho 3 thuộc tính border-width, border-style và border-color. 
+        (border: 5px solid yellow;) 
+        */
+
+/*Float*/
+        /* Chúng ta có ba giá trị của float hay sử dụng nhất đó là:
+
+        + left: Nằm phía bên trái
+        + right: Nằm phía bên phải
+        + none: Nằm tại chính vị trí của nó (trạng thái bình thường) 
+        
+        */
+
+/*Display*/
+        /* Các thuộc tính của display chính bao gồm:
+
+        + inline: hiển thị trên một hàng
+        + block: hiển thị dang khối
+        + inline-block: kết hợp cả 2 cách hiển thị trên
+        + none: không hiển thị 
+        
+        .hidden{
+                display: none;
+            }
+
+            .show{
+                display: block;
+            }
+
+        */
+/*Margin & Padding*/
+        /* Thuộc tính margin và padding trong CSS
+        + Hai thuộc tính này dùng để canh lề so với nội dung của thẻ HTML.
+
+        * Margin
+        * Dùng để tạo khoảng cách giữa hai thẻ HTML, xem hình dưới đây:
+        * Chúng ta có 5 cách sử dụng như sau:
+
+        + margin-left: 20px : khoảng cách lề trái 20px 
+        + margin-top:20px : khoảng cách lề trên 20px
+        + margin-right: 20px : khoảng cách lề phải 20px
+        + margin-bottom: 20px : khoảng cách lề dưới 20px
+        + margin : 20px : tất cả lề trên, lề dưới, lề trái, lề phải đều có khoảng cách 20px  */
+
+        /* Padding
+        * Dùng để tạo khoảng giữa thẻ HTML và nội dung của nó, xem hình dưới đây:
+        * Chúng ta cũng có 5 cách dùng tương tự như margin:
+
+        + padding-left: 20px : khoảng cách lề trái so với nội dung bên trong 20px 
+        + padding-top:20px : khoảng cách lề trên so với nội dung bên trong 20px
+        + padding-right: 20px : khoảng cách lề so với nội dung bên trong phải 20px
+        + padding-bottom: 20px : khoảng cách so với nội dung bên trong lề dưới 20px
+        + padding : 20px : tất cả lề trên, lề dưới, lề trái, lề phải so với nội dung bên trong đều có khoảng cách 20px  */
+
+/*Positions*/
+        /* 
+        * Thuộc tính position trong CSS dùng để xác định vị trí hiển thị 
+        cho thẻ HTML và thường được dùng để xây dựng CSS cho menu đa cấp, 
+        tooltip hoặc một số chức năng khác.
+
+        + static: Dạng mặc định - sẽ hiển thị theo đúng thứ tự của nó (thường dùng để hủy các thuộc tính bên dưới)
+        + relative: Định vị trí tuyệt đối (vị trí bao ngoài), lúc này các thẻ HTML bên trong sẽ coi nó là thẻ cha
+        + absolute: Định vị trí tương đói theo thẻ cha (thẻ khai báo relative) hoặc thẻ body nếu ko có khai báo
+        + fixed: Định vị trí tương đối cho của sổ Browser của trình duyệt (khi kéo scroll nó sẽ không bị ẩn đi)
+        + inherit: Thừa hưởng các thuộc tính từ thành phần cha (thành phần bao ngoài nó) 
+        */
+
+/* Menu Dọc hai cấp */
+        /* 
+        Xem ở đây: 
+        https://freetuts.net/xay-dung-menu-doc-hai-cap-don-gian-bang-css-443.html 
+        */
+
+/*Position Fexed*/
+        /* 
+        Tương tự như thuộc tính Absolute, Fixed cũng hoạt động dựa vào một thẻ cha làm chuẩn bên ngoài. 
+        Chỉ có khác một điều là đối với Fixed thì khi bạn scrolling thì 
+        nó sẽ nằm luôn trên màn hình ngay tại vị trí chuẩn đó và đè lên trên các phần tử bên dưới.
+
+        Theo mặc định thì Fixed sẽ lấy luôn cửa sổ trình duyệt làm nơi để làm chuẩn. 
+        Nhưng nếu các thẻ cha của nó có khai báo position: relative thì nó sẽ lấy thẻ cha đó chứ không lấy của sổ trình duyệt nữa. 
+        Tuy nhiên nếu bạn khai báo một trong bốn thuộc tính sau: top - left- bottom - right 
+        thì lúc này nó sẽ không lấy thẻ cha đó nữa mà nó sẽ lấy cửa sổ trình duyệt làm chuẩn. 
+        */
+
+/* Z-Index*/
+        /* 
+        Thuộc tính z-index được sinh ra nhằm giải quyết cấp độ hiển thị của các thẻ HTML lên trình duyệt Browser,
+        hay nói cách khác z-index giống như đánh số thứ tự hiển thị,
+        thẻ nào có z-index cao thì nằm phía trên và thẻ nào có z-index thấp thì nằm phía dưới.
+        Tuy nhiên không phải lúc nào cũng sử dụng được z-index nên bạn phải biết các tính chất sau:
+
+        + Bạn chỉ thiết lập z-index được cho các thẻ có khai báo position:absolute.
+        + Giá trị của z-index là một con số (âm hoặc dương).
+        + Hai thẻ có cùng z-index thì sẽ tuân theo quy luật thẻ nào nằm dưới thì được hiển thị phía trên, thẻ con sẽ nằm trên thẻ cha.
+        + Giá trị z-index mặc định của các thẻ HTML là 1, vì vậy các thẻ HTML thông thường nếu nằm phía dưới thì nó sẽ đè thẻ phía trên. */
+
+/* ClearFix*/
+        /* 
+        * Kỹ thuật ClearFix trong CSS là cách sử dụng các thuộc tính CSS 
+        để điều chỉnh vùng không gian của thẻ cha so với các thẻ con có sử dụng float. 
+        Tại vì khi bạn sử dụng float thì chiều cao của thẻ cha sẽ được tính là 0px so với thẻ con float đó, 
+        điều này nghĩa chiều cao của thẻ cha sẽ được tăng lên khi nội dung bên trong của nó không có sử dụng float.
+        Xem nhiều hơn ở đây:
+        (
+        https://freetuts.net/ky-thuat-clearfix-trong-css-446.html 
+        )
+        */
+
+/* After & Before*/
+        /* 
+        After dùng để thêm nội dung vào đằng sau thẻ HTML.:
+
+                <style>
+                .title:after{
+                content : " freetuts.net"
+                }
+                </style>
+                </head>
+                <body>
+                <div class="title">Chào mừng bạn đến với</div>
+                </body> 
+        
+        */
+
+        /* 
+        Before dùng để thêm nội dung vào đằng trước thẻ HTML.:
+                <style>
+                .title:after{
+                        content : " freetuts.net"
+                }
+                </style>
+        
+                </head>
+                <body>
+                <div class="title">Chào mừng bạn đến với</div>
+                </body> 
+                */  
+
+/*CSS combinators*/  
+                /*
+                CSS combinators mình hiểu đơn giản là mối liên hệ giữa các selector. 
+                Cũng như con người chúng ta cũng có liên hệ với nhau như cha con, ông cháu, anh chị em.. 
+                Selector cũng vậy nó đều có mối liên hệ với các selector khác.  
+                */
+
+                /* Descendant selector (space) */
+                /* 
+                * Space (khoảng trắng) có ý nghĩa là chọn tất cả những thẻ con nằm trong một selector nào đó. 
+                Ví dụ :
+                div.test h6 {
+                              color: red;
+                            }
+                
+                */
+
+                /* 
+                Child selector (>) có ý nghĩa là chọn tất cả những thẻ con trực tiếp của một selector nào đó. 
+                Nghĩa là thẻ con nằm vô trong đúng một cấp so với selector đó. 
+                Ví dụ :
+                div.test > h6 {
+                                color: red;
+                              }
+                
+                */
+
+                /* Adjacent sibling selector (+) có ý nghĩa là chọn tất cả những thẻ anh/chị/em ruột nằm liền kề ngay sau một selector nào đó. 
+                Mình hiểu mối liên hệ  anh/chị/em ruột giữa selectors cũng giống như mối liên hệ anh/chị/em ruột của
+                con người chúng ta là phải cùng chung một cha theo đúng nghĩa đen nha.. 
+                Ví dụ :
+                div.test + h6 {
+                                        color: red;
+                              }
+                */
+
+                /* General sibling selector (~) có ý nghĩa là chọn tất cả những thẻ anh/chị/em của selector nào đó. 
+                Tuy nhiên những thẻ này phải nằm phía sau selector đó. 
+                Ví dụ :
+                div.test ~ h6 {
+                                color: red;
+                              }
+
+                link để truy cập : https://freetuts.net/vung-chon-trong-css-css-combinators-1626.htm
+                */
+
+/* List-style/*
+        /* 
+        List trong HTML có 2 loại chính đó là:
+
+        - Danh sách có thứ tự (ordered list). Đánh dấu mục của danh sách có thứ tự mặc định là số và bắt đầu bằng 1.
+
+        Bài viết này được đăng tại [free tuts .net]
+
+        - Danh sách không có thứ tự (unordered list). Đánh dấu mục của danh sách không có thứ tự mặc định là dấu chấm màu đen.
+
+        CSS có những thuộc tính như list-style-type, list-style-image, list-style-position 
+        ho phép thay đổi biểu tượng đánh dấu danh mục của danh sách. 
+        */
+
+        /* 
+        * list-style-type là thuộc tính cho phép chỉ định loại đánh dấu mục của danh sách nào sẽ được hiển thị, 
+        ví dụ như là hình tròn, hình vuông, chữ la mã ...
+        * list-style-type có rất nhiều giá trị, tuy nhiên mình chỉ giới thiệu những giá trị hay sử dụng sau:
+
+        + circle: giá trị hiển thị là hình tròn
+        + square:  giá trị hiển thị là hình vuông
+        + upper-roman: giá trị hiển thị là chữ la mã hoa như I, II, II, IV ...
+        + lower-roman: giá trị hiển thị là chữ la mã thường như i, ii, iii, iv ...
+        + upper-latin: giá trị hiển thị là chữ cái latin hoa như A, B, C ...
+        + lower-alpha: giá trị hiển thị là chữ cái alphabet như a, b, c ...
+        + none: không hiển thị gì cả
+        + decimal: giá trị hiển thị là số như 1, 2, 3 ...
+        + d+ecimal-leading-zero: giá trị hiển thị là số nhưng sẽ thêm số 0 phía trước số, nếu số < 10 như 01, 02, 03 ...
+        */
+
+        /* 
+        list-style-image là thuộc tính dùng hình ảnh (image) để làm đánh dấu mục của danh sách. 
+        */
+
+        /* 
+        * list-style-position là thuộc tính dùng để thiết lập vị trí hiển thị của các đánh dấu mục của danh sách.
+        * list-style-position có 2 giá trị chính đó là:
+
+        + outside: đánh dấu mục của danh sách sẽ nằm bên ngoài các phần tử của danh sách
+        + inside: đánh dấu mục của danh sách sẽ nằm bên trong các phần tử của danh sách. 
+        */
+
+        /* 
+        * list-style là thuộc tính trình bài cách viết ngắn gọn của 3 thuộc tính 
+        * list-style-type, list-style-image, list-style-position.
+
+        + Cú pháp:      
+        selector {
+        list-style: type image position;
+                 } `                 
+        */
+
+/* Oveflow */ 
+
+        /* 
+        Link để truy cập : https://freetuts.net/tim-hieu-ve-overflow-trong-css-1640.html  
+        Thuộc tính overflow cho phép mình khắc phục khó khăn trên bằng 
+        cách cắt đi phần nội dung bị tràn hoặc thêm thanh cuộn cho phần tử đó.
+
+        + visible
+        Khi thuộc tính overflow có giá trị  
+        là visible thì phần nội dung bị tràn không bị cắt đi và nội dung bị tràn ra sẽ ghi đè lên các phần tử khác.
+
+        + hidden
+        Khi thuộc tính overflow có giá trị là hidden thì phần nội dung bị tràn ra bị cắt đi và phần nội dung đó sẽ bị ẩn đi.
+        Khi thuộc tính overflow có giá trị là scroll thì phần nội dung bị tràn ra vẫn bị cắt đi, 
+        tuy nhiên trình duyệt sẽ có thêm thanh scroll, mình có thể kéo xem phần nội dung bị ẩn đi.
+        Thanh scroll này được thêm vào cho cả chiều dọc và chiều ngang của phần tử.
+
+        + overflow-x là thuộc tính cho phép điều khiển nội dung bị tràn theo chiều ngang 
+        (nghĩa là bên trái (left) và bên phải (right) của phần tử). 
+        Tương tự thuộc tính overflow, thuộc tính overflow-x cũng có giá trị như visible, hidden, auto, scroll.        
+
+        + overflow-y là thuộc tính cho phép điều khiển nội dung bị tràn theo chiều dọc 
+        (nghĩa là bên trên (top) và bên dưới (bottom) của phần tử). 
+        Tương tự thuộc tính overflow, thuộc tính overflow-y cũng có giá trị như visible, hidden, auto, scroll.
+        */
+/* Pseudo - Class*/
+        /* Pseudo-classes dùng để xác định trạng thái đặc biệt của một phần tử
+        Ví dụ, Pseudo-classe có thể được sử dụng để:
+        Thiết lập thuộc tính style cho phần tử khi người dùng di chuyển (hover) qua nó
+       * Ví dụ :
+        div:hover {
+                background-color: red;
+                color: yellow;
+        }
+        div {
+                border: 1px solid black;
+        } */
+
+        /* 
+        tooltip :hover.
+        p {
+                display: none; // Giúp ẩn thẻ p đi
+                background-color: yellow;
+                padding: 20px;
+             }
+             div:hover p { // Khi chạm vào div thì phần nội dung của P sẽ hiện lên và có background màu vàng
+                display: block;
+             } 
+        */
+
+        /* 
+             
+        :first-child.
+                Ở ví dụ này, mình sẽ thiết lập màu chữ (color) là màu đỏ cho phần tử p đầu tiên.
+                Ví dụ
+                p:first-child {
+                color: red;
+                } 
+        */
+        /*
+        :nth-last-child(1) 
+                + Phần tử cuối cùng từ dưới đếm lên "1" sẽ được thi hành trong css
+                */
+        /* :checked.
+                Ở ví dụ này, mình sẽ thiết lập độ rộng (width) là 30px và chiều cao (height) là 30px cho tất cả phần tử input được checked.
+                Ví dụ:
+                input:checked { // Khí Click chuột vào thanh chọn thì ô chọn sẽ hiện lên với width=30px và height=3opx 
+                height: 30px;
+                width: 30px;
+                } 
+        */
+
+        /* 
+        :disabled, :enabled
+                Ở ví dụ này, mình sẽ thiết lập màu nền (background) cho tất cả phần tử input bị disable là màu xám, 
+                và tất cả phần tử input được enable sẽ được thiết lập màu nền (background) là đỏ, màu chữ (color) là vàng.
+                <style> 
+			input:enabled {
+			  background: red;
+			  color: yellow;
+			}
+			input:disabled {
+			  background: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="">
+		  Tên: <input type="text" value="Ly"><br>
+		  Họ: <input type="text" value="Ngô"><br>
+		  Công ty: <input type="text" disabled="disabled" value="Tin học">
+		</form>
+	</body> 
+        */
+        /* 
+        :empty
+        Ở ví dụ này, mình sẽ lập màu nền (background) là màu vàng cho phần tử p có nội dung rỗng (empty).
+        p:empty {
+        width: 500px;
+        height: 20px;
+        background: yellow;
+        }
+
+        :last-child
+        Ở ví dụ này, mình sẽ thiết lập màu nền (background-color) là màu đỏ, màu chữ (color) là màu vàng cho phần tử p cuối cùng.
+        p:last-child {
+        background-color: red;
+        color: yellow;
+        }
+
+        :required
+        Ở ví dụ này, mình sẽ thiết lập màu nền (background-color) là màu đỏ cho phần tử input bắt buộc (required) nhập giá trị.
+        input:required {
+        background-color: red;
+        }
+
+        :optional
+        Ở ví dụ này, mình sẽ thiết lập màu nền (background-color) là màu đỏ cho phần tử input không bắt buộc (optional) nhập giá trị .
+        input:optional {
+        background-color: red;
+        }
+
+        :read-only
+        Ở ví dụ này, mình sẽ thiết lập màu nền (background-color)  là màu đỏ cho phần tử input chỉ được phép đọc (read-only) giá trị.
+        input:read-only {
+        background-color: red;
+        }
+
+        :root
+        Ở ví dụ này, mình sẽ thiết lập màu nền (background) cho phần tử root là màu đỏ.  Trong HTML, phần tử root là phần tử html.
+        :root {
+        background: red;
+        }
+
+        :valid
+        Ở ví dụ này, mình sẽ thiết lập màu nền (background-color) là màu xanh cho phần tử input có giá trị hợp lệ (valid).
+
+        input:valid {
+        background-color: green;
+        }
+
+        :target
+        Ở ví dụ này, mình sẽ thiết lập màu nền (background-color) là màu đỏ và thiết lập border cho phần tử target.
+
+        :target {
+        border: 2px solid black;
+        background-color: yellow;
+        }
+
+        :out-of-range
+        Ở ví dụ này, mình sẽ thiết lập border là màu đỏ cho phần tử input khi có giá trị vượt ra ngoài phạm vi 5 và 10.
+        input:out-of-range {
+        border: 2px solid red;
+        } 
+        */
+
+/* Psedo - Element*/ 
+        /* 
+        Link tuy cập : https://freetuts.net/tim-hieu-ve-pseudoelements-trong-css-1637.html
+        Pseudo-Element được sử dụng để định kiểu các phần được chỉ định của một phần tử.
+
+        Ví dụ, nó có thể được sử dụng để:
+
+        Định dạng style cho chữ cái đầu tiên hoặc dòng đầu tiên của một phần tử. 
+
+        ::first-line được sử dụng để thêm style CSS cho dòng đầu tiên của nội dung.
+        <style>
+                                p::first-line {
+                                color: red;
+                                }
+                                span::first-line {
+                                color: red;
+                                }
+                        </style>
+                </head>
+                <body>
+                        <p>Đây là nội dung của phần tử p. Đây là nội dung của phần tử p. Đây là nội dung của phần tử p.
+                        Đây là nội dung của phần tử p. Đây là nội dung của phần tử p. Đây là nội dung của phần tử p. 
+                        Đây là nội dung của phần tử p.</p>
+                        <span>Đây là nội dung của phần tử span.</span>
+                </body>
+                ::first-letter được sử dụng để thêm style CSS cho ký tự đầu tiên của nội dung.
+
+                ::selection
+        ::selection dùng để thiết lập style CSS cho nội dung phần tử được chọn bởi người dùng 
+        (bằng thao tác như double-click vào nội dung hay giữ chuột trái để chọn nội dung). 
+        */
+
+/* Table/*
+                
+                /* 
+                + nth-child là thuộc tính cho phép mình thiết lập các thuộc tính CSS lên dòng chẵn (even) hay dòng lẻ (odd).
+                + padding là thuộc tính để thiết lập khoảng trắng giữa nội dung (text) của td, th.
+
+                + Căn chỉnh phần tử nằm ở giữa (sử dụng margin)
+                Trong CSS có thuộc tính margin có giá trị là auto cho phép căn chỉnh (align) phần tử nằm ở giữa so với phần tử cha của nó.
+                + Thuộc tính margin: auto chỉ căn giữa cho phần tử block như div, h1-h6, p, ... còn các phần tử inline như span, a... sẽ không được áp dụng.
+
+                * Chú Ý(*): 
+                * Khi phần tử không thiết lập độ rộng (width) thì sẽ không thấy được phần tử căn giữa vì nó chiếm hết động rộng sẵn có.
+                + Mình xin nhắc lại phần tử block và phần tử inline là gì cho các bạn chưa biết về nó.
+                + Phần tử block luôn bắt đầu với dòng mới và chiếm toàn bộ độ rộng sẵn có. 
+                + Mặc định các phần tử sau đây là phần tử block như div, h1 - h6, p, form, header, footer, section...
+                + Phần từ inline không bắt đầu dòng mới và chiếm độ rộng vừa đủ nội dung của phần tử. 
+                + Mặc định các phần tử sau đây là phần tử inline như span, a, img...
+                + Có thể ghi đè lại phần tử hiển thị block hay inline bằng cách sử dụng thuộc tính display. 
+                Ví dụ: span { display: block;}.
+                * Ví dụ sau mình sẽ căn giữa cho hình ảnh và thiết lập thuộc tính display là block:
+
+                img {
+                display: block;
+                margin: auto;
+                } 
+                */
+/*Form*/
+                /* Button, lable, submid, reset(xóa tất cả), checkbox( chọn được nhiều), radio(chỉ được chọn 1), register, hidder(trường ẩn)*/
+                /* 
+                * Khi cho thuộc tính ẩn như 
+                + checkbox thì mặc định nó sẽ tích vào ô đó hay 
+                + password giúp ẩn nội dung
+                + autofocus con trỏ chuộc hiển thị vào input khi livesever
+                + placeholder giúp hiện dòng chữ cho input (text), 
+                + number chỉ được nhập số, 
+                + values giá trị cho trước, 
+                + disadbled không cho người dùng chọn,
+                + RealOnly không thể thay đổi được */
+
+/* Form nâng cao */   /*link chi tiết nhất: https://xuanthulab.net/the-label-va-the-input-trong-html.html#url   */
+                /*
+                + maxlength: cho phép người dùng nhập tối đa bao nhiêu
+                + Required yêu cầu người dùng nhập lại không được bỏ trống
+                + File nút chọn file vidu chọn avata, CV jod
+
+/*object-fit*/
+                /* Căn chỉnh ( tự động ) để hình được đúng tỉ lệ */
+
+/*Ifram*/
+                /*Thẻ giúp bỏ các video, gg map,... vào wed*/
+
+/*Symbols*/
+                /* Cách 1: &entity_name;
+                        of
+                   Cách 2: #entity_number;
+/* Transition*/ 
+                /* Thời gian hiệu ứng xuất hiện*/
+
+/*transform*/
+                /*transform: translate(200px, 100px) di chuyển theo hai trục X, Y*/
+                /* Di chuyển theo các trục X(Ngang),Y(Dọc)*/
+                     
+
+                /* Transform: Scale(300px)*/
+                /* Phóng to thu nhỏ của thẻ theo các chiều X,Y*/
+                
+                /*Transform: rotate(180deg);*/
+                /*Độ xoay hình*/
+
+                /* transform: skewX(20deg); */
+                /* Kết hợp border để tạo nên hình bình hành nhỏ như Thi_Du_06.html(Thiết Kế Layout)*/
+                /* Đẩy hình */
+
+/*Hàm trong css*/
+                /* 
+                + Var()
+                + linear-gradient()
+                + rgba() // Phối màu
+                + rgb() // Ví dụ: background-color: rgb(0, 0, 0); => Thẻ đó sẽ có màu đen, có thể tăng để thấy rõ màu sắc thay đổi
+                + calc() // Tính toán phần trăm ví dụ: width: calc(80% - 50px)
+                + attr() // ::after(thêm sau) & ::before(thêm trước)
+
+/* Căn giữa */
+                /* + Cho line-height bằng với độ cao của thẻ đó (height)
+                + Sử dụng Display: Flex ; Cho thẻ chính, Phần muốn cho vào giữa sử dụng margin: Auto; => Giúp căn được ở nhiều thẻ
+                + Sử dụng Display: Flex ; => align-item: Center; để căn giữa theo chiều dọc, and => justify-content:center; để căn theo chiều ngang vào giữa 
+                + Sửa dụng Position: đặt thuộc tính cho thẻ cha và thẻ con => sau đó sửa dụng top, left, chia đôi phần trăm => sau khi chi đôi thẻ con sẽ bị đẩy nhiều xuống ,
+                chúng ta sửa dụng transform : translateY hoặc  translateX để điều chỉnh bằng với phần trăm của top, left
+                Ví dụ: Cho top: 50%; thì phải cho transform : translateY(-50%) và left:50%; translateX(-50%) 
+                Còn botoom thì phải cho transform : translateY(50%) và Right:50%; translateX(50%) 
+                */
+                /* Chi tiết bài căn giữa : https://youtu.be/I2-m_kWZp_Y  => Tạo được dọc ngăn cách có ở bài này*/ 

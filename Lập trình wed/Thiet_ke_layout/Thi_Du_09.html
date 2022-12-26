@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu ngang</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .row{
+            float: left;
+            width: 100%;
+        }
+        .boxcenter{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .bgc1{
+            background-color: #ccc;
+        }
+        .mh{
+            min-height: 40px;
+        }
+        /* .menu{
+
+        } */
+        ul{
+            
+            list-style-type: none;
+            padding: 10px;
+        }
+        .cap1>li{
+            /* background-color: aquamarine; */
+            display: inline;
+            margin: 10px;
+            
+            /* float: left; */
+            position: relative;
+        }
+        ul li ul {
+                display: none;
+                background-color: #ccc;
+                position: absolute;
+                top: 18px;
+                left: 0px;
+                width: 110px;
+        }
+        ul > li:hover ul{
+                display: block;
+                
+        }
+        ul li:hover{
+            background-color: aqua;
+            color: azure;
+            transition: 0.5s;
+        }
+        ul li ul:hover li{
+            background-color: rgb(218, 221, 35);
+            transition: 0.5s;
+            color: white;
+            margin-left: -10px;
+        }
+        ul li ul li{
+            padding:10px 5px ;
+            border-bottom:1px solid  ;
+        }
+        ul li ul li:last-child{
+            border-bottom: none;
+        }
+        a{
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 14px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="boxcenter">
+            <div class="menu mh bgc1 ">
+                <ul class="cap1">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li>
+                        <a href="#">Phòng ban</a>
+                        <ul>
+                            <li><a href="#">Hàng chính</a></li>
+                            <li><a href="#">Đào tạo</a></li>
+                            <li><a href="#">Tài chính</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Trung Tâm</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

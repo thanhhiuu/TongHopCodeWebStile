@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .box{   
+            width:300px ;
+            min-height: 200px;
+            background-color: rgb(78, 45, 228);
+            margin: 50px;
+            position: relative;            
+        }
+        .box::before{
+            content: "";
+            background-color:aquamarine;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            z-index: -1;
+        }   
+        .box::after{
+            content: "";
+            background-color:violet ;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            z-index: 2;
+        }
+        .content{
+            position: relative;
+            width: 300px;
+            min-height: auto;
+            font-size: 24px;
+            margin-left: 50px;
+            font-weight:bold ;
+        }
+        .content::before{
+            position: absolute;
+            content: "";
+            width: 170px;
+            min-height: 10px;
+            margin-left: 150px;
+            margin-top: 5px;
+            border-bottom: 5px solid black;
+            z-index: 1;
+            color: rebeccapurple;
+            border-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">Tin tức nóng</div>
+    <div class="box">       
+        <div class="cu"></div>
+    </div>
+</body>
+</html>

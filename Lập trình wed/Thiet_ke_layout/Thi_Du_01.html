@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh họa Position</title>
+    <style>
+        .row{
+            width: 100%;
+            float: left;
+        }
+        .box{
+            width: 30%;
+            float: left;
+            position: relative;
+        }
+        .box img{
+            width: 100%;
+            min-height: 100px;
+            float: left;
+            object-fit: cover;
+            z-index: 1;
+            border-radius: 50px;
+        }
+        .hot{
+            position: absolute;
+            width: 80px;
+            min-height: 80px;   
+            color: violet;
+            background-color: yellow;
+            z-index: 2;
+            left: calc(50% - 40px);
+            /* top: calc(50% - 40px); */
+            text-align: center;
+            line-height: 40px;
+            border-bottom-left-radius: 10px ; /* chỉ border góc left & right*/
+            border-bottom-right-radius: 10px;
+            border-radius: 100px;
+            bottom: 10%;
+            text-shadow: 2px 2px 3px black;
+        }
+        .content{
+            position: absolute;
+            width: 80px;
+            background-color: aqua;
+            left: calc(50% - 40px);
+            text-align: center;
+            text-shadow: 2px 3px 4px violet;
+        }
+        .box:hover{
+            box-shadow: 3px 3px 4px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="box">
+            <img src="./images/img_1.png" alt="">
+            <div class="hot">
+                Thanh Phong
+            </div>
+            <div class="content">
+                Hiếu
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
