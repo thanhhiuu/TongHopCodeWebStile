@@ -41,3 +41,10 @@ else {
 // Phep toan ba ngoi
 console.log("Ban se", c < 18 ? "Khong duoc lai xe" : "Duoc phep lai xe");
 // Bai tap co ban ve swich... case
+
+
+// Toán tử ba ngôi
+let age = 12;
+
+let a = age > 18 ? "Bạn đủ tuổi" : "Bạn không đủ tuổi";
+console.log(a);
