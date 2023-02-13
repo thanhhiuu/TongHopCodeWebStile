@@ -44,109 +44,109 @@ for(;i < 10; i += 2) {
 // }
 // program to validate the email address
 
-function resolveAfter2Seconds() {
+// function resolveAfter2Seconds() {
 
-    console.log("starting slow promise")
+//     console.log("starting slow promise")
   
-    return new Promise(resolve => {
+//     return new Promise(resolve => {
   
-      setTimeout(function() {
+//       setTimeout(function() {
   
-        resolve("slow")
+//         resolve("slow")
   
-        console.log("slow promise is done")
+//         console.log("slow promise is done")
   
-      }, 2000)
+//       }, 2000)
   
-    })
+//     })
   
-  }
-  
-  
-  function resolveAfter1Second() {
-  
-    console.log("starting fast promise")
-  
-    return new Promise(resolve => {
-  
-      setTimeout(function() {
-  
-        resolve("fast")
-  
-        console.log("fast promise is done")
-  
-      }, 1000)
-  
-    })
-  
-  }
+//   }
   
   
-  async function sequentialStart() {
+//   function resolveAfter1Second() {
   
-    console.log('==SEQUENTIAL START==')
+//     console.log("starting fast promise")
   
-    const slow = await resolveAfter2Seconds()
+//     return new Promise(resolve => {
   
-    console.log(slow)
+//       setTimeout(function() {
   
-    const fast = await resolveAfter1Second()
+//         resolve("fast")
   
-    console.log(fast)
+//         console.log("fast promise is done")
   
-  }
+//       }, 1000)
   
+//     })
   
-  async function concurrentStart() {
-  
-    console.log('==CONCURRENT START with await==');
-  
-    const slow = resolveAfter2Seconds()
-  
-    const fast = resolveAfter1Second()
-  
-    console.log(await slow)
-  
-    console.log(await fast)
-  
-  }
+//   }
   
   
-  function concurrentPromise() {
+//   async function sequentialStart() {
   
-    console.log('==CONCURRENT START with Promise.all==')
+//     console.log('==SEQUENTIAL START==')
   
-    return Promise.all([resolveAfter2Seconds(), resolveAfter1Second()]).then((messages) => {
+//     const slow = await resolveAfter2Seconds()
   
-      console.log(messages[0])
+//     console.log(slow)
   
-      console.log(messages[1])
+//     const fast = await resolveAfter1Second()
   
-  })
-}
+//     console.log(fast)
   
-  
-  async function parallel() {
-  
-    console.log('==PARALLEL with await Promise.all==')
-  
-    await Promise.all([
-  
-        (async()=>console.log(await resolveAfter2Seconds()))(),
-  
-        (async()=>console.log(await resolveAfter1Second()))()
-  
-    ])
-  
-  }
+//   }
   
   
-  sequentialStart()
+//   async function concurrentStart() {
   
-  setTimeout(concurrentStart, 4000)
+//     console.log('==CONCURRENT START with await==');
   
-  setTimeout(concurrentPromise, 7000)
+//     const slow = resolveAfter2Seconds()
   
-  setTimeout(parallel, 10000)
+//     const fast = resolveAfter1Second()
+  
+//     console.log(await slow)
+  
+//     console.log(await fast)
+  
+//   }
+  
+  
+//   function concurrentPromise() {
+  
+//     console.log('==CONCURRENT START with Promise.all==')
+  
+//     return Promise.all([resolveAfter2Seconds(), resolveAfter1Second()]).then((messages) => {
+  
+//       console.log(messages[0])
+  
+//       console.log(messages[1])
+  
+//   })
+// }
+  
+  
+//   async function parallel() {
+  
+//     console.log('==PARALLEL with await Promise.all==')
+  
+//     await Promise.all([
+  
+//         (async()=>console.log(await resolveAfter2Seconds()))(),
+  
+//         (async()=>console.log(await resolveAfter1Second()))()
+  
+//     ])
+  
+//   }
+  
+  
+//   sequentialStart()
+  
+//   setTimeout(concurrentStart, 4000)
+  
+//   setTimeout(concurrentPromise, 7000)
+  
+//   setTimeout(parallel, 10000)
   
   

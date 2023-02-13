@@ -204,17 +204,33 @@
     <div class="cartegory">
         <div class="container">
                 <div class="cartegory_top">
-                    <p>Trang chủ </p> <span>-</span> <p class="black">Áo dài tết</p> 
+                    <p>Trang chủ </p> <span>-</span> <p class="black">Áo dài tết</p>              
                 </div>
             <div class="row">
 
                 <div class="cartegory_left">
                     <ul>
-                        <li><a href="#">Size<span>+</span></a></li> 
-                        <li><a href="#">Màu sắc<span>+</span></a></li>
-                        <li><a href="#">Mức giá<span>+</span></a></li>
-                        <li><a href="#">Mức chiết khấu<span>+</span></a></li>
-                        <li><a href="#">Nâng cao <span>+</span></a></li>
+                        <li class="size"><a href="#">Size<span ><button>+</button></span></a>
+                            <div class="cartegory_left_size cartegory_left_click">
+                                <div><button type="button">S</button></div>
+                                <div><button type="button">M</button></div>
+                                <div><button type="button">L</button></div>
+                                <div><button type="button">XL</button></div>
+                                <div><button type="button">XXL</button></div>
+                            </div>
+                        </li> 
+                        <li class="size"><a href="#">Màu sắc<span><button type="button">+</button></span></a>
+                            <div class="cartegory_left_color cartegory_left_click ">
+                                <div><button title="Đỏ" class="red" type="button"></button></div>
+                                <div><button title="Xanh nước" class="blue" type="button"></button></div>
+                                <div><button title="Trắng" class="white" type="button"></button></div>
+                                <div><button title="Đen" class="black" type="button"></button></div>
+                                <div><button title="Xanh lá" class="green" type="button"></button></div>
+                            </div>
+                        </li>
+                        <li><a href="#">Mức giá<span><button>+</button></span></a></li>
+                        <li><a href="#">Mức chiết khấu<span><button>+</button></span></a></li>
+                        <li><a href="#">Nâng cao <span><button>+</button></span></a></li>
                         <div class="btn">
                             <div class="btn-boloc">
                                 <button type="button">Bỏ lọc</button>
@@ -229,7 +245,18 @@
                 <div class="cartegory_right">                 
                     <div class="cartegory_right_top_item">
                         <p>Hàng mới về</p>
-                        <ul>Sắp xếp theo</ul>
+                        <form name="form1" id="form1" action="/?" method="POST">
+                            <label for="select1">Sắp xếp theo</label>
+                            <select name="select1" id="select1" class="cartegory_combobox">
+                                    <option value="select">Lựa chọn</option>
+                                    <option value="1">Mặc định</option>
+                                    <option value="2">Mới nhất</option>
+                                    <option value="3">Được mua nhiều nhất</option>
+                                    <option value="4">Được yêu thích nhất</option>
+                                    <option value="5">Giá: cao đến thấp</option>
+                                    <option value="5">Giá: thấp đến cao</option>
+                            </select>
+                    </form>
                     </div>  
                     <div class="cartegory_right_img">
                         <div class="cartegory_img">
@@ -277,10 +304,33 @@
                             <p>Áo thun in họa tiết</p>
                             <span>1000$</span>
                         </div>
+                        <div class="cartegory_img">
+                            <a href="#"><img src="../IMG/1.jpg" alt=""></a>
+                            <p>Áo thun in họa tiết</p>
+                            <span>1000$</span>
+                        </div>
+                        <div class="cartegory_img">
+                            <a href="#"><img src="../IMG/1.jpg" alt=""></a>
+                            <p>Áo thun in họa tiết</p>
+                            <span>1000$</span>
+                        </div>
+                        <div class="cartegory_img">
+                            <a href="#"><img src="../IMG/1.jpg" alt=""></a>
+                            <p>Áo thun in họa tiết</p>
+                            <span>1000$</span>
+                        </div>
+                    </div>
+                    <div class="cartegory_page">
+                        <p>>></p>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>...</p>
+                        <p><<</p>
+                        <p>Trang cuối</p>
+                    </div>
                     </div>    
                 </div>           
         </div>
-    </div>
 
     <!----------------------------------- Footer --------------------------------->
     <section class="app-container">
@@ -323,7 +373,7 @@
         </div>
         <div class="save-gmail">
             <div class="box-gmail">
-                <h3>Nhận thông tin các chương trình của IVY modaNhận thông tin  </h3>
+                <h3>Nhận thông tin các chương trình của IVY moda Nhận thông tin  </h3>
                 <div class="btn">
                     <input type="text" name="" id="" placeholder="Nhập địa chỉ Email">
                     <button type="button" id="btn">Đăng ký</button>
@@ -335,4 +385,5 @@
         <p>©IVYmoda All rights reserved</p>
     </div>
 </body>
+<script src="../JS/Sales.js"></script>
 </html>

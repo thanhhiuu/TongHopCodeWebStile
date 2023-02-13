@@ -68,9 +68,7 @@ console.log("Gia tri cua ban hop le");
 // Problem No 4
 // => Kiem tra gia tri trung binh cua tung so
 
-const mean = (a, b, c, d) => {
-    return (a + b + c + d)/4
-}
-console.log(mean(1, 2, 3, 4));
-
-//
+// const mean = (a, b, c, d) => {
+//     return (a + b + c + d)/4
+// }
+// console.log(mean(1, 2, 3, 4));
