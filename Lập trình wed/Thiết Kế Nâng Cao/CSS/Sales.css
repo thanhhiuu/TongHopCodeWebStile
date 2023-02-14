@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-span {
+.logo span {
     color: #ff3333;
     font-size: 30px;
 }
@@ -616,7 +616,7 @@ header .menubar ul li .fa-search {
 /* style product */
 .product {
     width: 100%;
-    height: 100vh;
+    height: 130vh;
 }
 .product .product_top {
     display: flex;
@@ -630,16 +630,22 @@ header .menubar ul li .fa-search {
 .product_content .product_left {
     flex: 1 1 200px;
     /* background-color: #C82E31; */
+    position: relative;
 }
-.product_left {
-    background-image: url(../IMG/Vịnh\ Hạ\ Long.jpg);
-    background-position: center;
-    background-size: cover;
+.product_left img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 .product_content .product_center {
-    flex: 1 1;
+    flex: 1 1 10px;
     position: relative;
     /* background-color: #7da02c; */
+}
+.product_center {
+    width: 100%;
+    height: 1300px;
 }
 .product_center img {
     width: 130px;
@@ -647,11 +653,11 @@ header .menubar ul li .fa-search {
     display: flex;
     margin: auto;
     padding-bottom: 20px;
+    object-fit: cover;
 }
 .product_center::after {
     content: "<";
     width: 100%;
-    height: 20px;
     position: absolute;
     top: 0;
     display: flex;
@@ -662,14 +668,9 @@ header .menubar ul li .fa-search {
 .product_center::before {
     content: ">";
     width: 100%;
-    height: 20px;
     position: absolute;
-    bottom: -10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 67%;
     transform: rotate(90deg);
-    
 }
 .product_center img:first-child {
     margin-top: 30px;
@@ -677,10 +678,46 @@ header .menubar ul li .fa-search {
 .product_content .product_right {
     flex: 1 1 380px;
     /* background-color: #381da7; */
-    padding:0px 105px ;
+    padding: 0px 105px ;
 }
 .product_right h1 {
     margin-bottom: 30px;
+}
+.product_right .information {
+    margin-top: 50px;
+    /* background-color: #333; */
+}
+/* style .information */
+.information_content_items {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #999;
+}
+.information_content_items  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.information_content_items_tab1 p {
+    cursor: pointer;
+}
+.information_content_items_text {
+    margin-top: 30px;
+    text-align: justify;
+}
+.chitiet-content {
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+.chitiet-content p {
+    font-weight: bold;
+    flex-basis: 50%;
+}
+.chitiet-content span {
+    color: #999;
+    flex-basis: 50%;
+
 }
 /* style .product_info */
 .product_info {
@@ -707,11 +744,16 @@ header .menubar ul li .fa-search {
     position: relative;
     margin: 20px 0;
 }
-.choose_color p {
-    font-size: 26px;
-}
 .choose_color span {
     margin-right: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.choose_color .red:hover::after {
+    transform: scale(1.2);
+}
+.choose_color .blue:hover::after {
+    transform: scale(1.2);
 }
 .choose_color .red::after {
     content: "";
@@ -741,6 +783,10 @@ header .menubar ul li .fa-search {
     outline: none;
     margin-right: 20px;
 }
+.choose_size p:hover {
+    background-color: #000;
+    color: #fff;
+}
 .product_choose .kiemtra {
     font-size: 15px;
     color: #666;
@@ -752,10 +798,10 @@ header .menubar ul li .fa-search {
     display: flex;
 }
 .choose_amount p {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .choose_amount input {
-    width: 100px;
+    width: 130px;
     outline: none;
     margin-bottom: 50px;
 }
@@ -770,9 +816,26 @@ header .menubar ul li .fa-search {
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
     margin-right: 20px;
+    cursor: pointer;
+    outline: none;
 }
 .choose_buy {
     margin-bottom: 30px;
+}
+.choose_buy .themvaogio:hover {
+    background-color: #fff;
+    color: #000;
+        transition: all 0.7s;
+}
+.choose_buy .muahang:hover {
+    transition: all 0.7s;
+    background-color: #000;
+    color: #fff;
+}
+.choose_buy .like:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.7s;
 }
 .choose_buy .themvaogio {
     background-color: #000;

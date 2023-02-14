@@ -48,3 +48,29 @@ menubarCartegory.forEach(function(menu, index){
         menu.classList.toggle("block");
     })
 })
+
+// ------------------------------------Product------------------------------------------
+const gioithieusp = document.querySelector(".gioithieu_tab");
+const chitiet = document.querySelector(".chitiet_tab");
+const baoquan = document.querySelector(".baoquan_tab")
+if(gioithieusp) {
+        gioithieusp.addEventListener("click", function() {
+        document.querySelector(".information_content_items_text_chitietsanpham").style.display = "none";
+        document.querySelector(".information_content_items_text_gioithieu").style.display = "block";
+        document.querySelector(".information_content_items_text_baoquan").style.display = "none";
+    })
+}
+if(chitiet) {
+    chitiet.addEventListener("click", function() {
+    document.querySelector(".information_content_items_text_chitietsanpham").style.display = "block";
+    document.querySelector(".information_content_items_text_gioithieu").style.display = "none"
+    document.querySelector(".information_content_items_text_baoquan").style.display = "none";
+    })
+}
+if(baoquan) {
+    baoquan.addEventListener("click", function() {
+    document.querySelector(".information_content_items_text_chitietsanpham").style.display = "none";
+    document.querySelector(".information_content_items_text_gioithieu").style.display = "none";
+    document.querySelector(".information_content_items_text_baoquan").style.display = "block";
+    })
+}
