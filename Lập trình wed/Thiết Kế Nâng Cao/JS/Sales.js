@@ -74,3 +74,13 @@ if(baoquan) {
     document.querySelector(".information_content_items_text_baoquan").style.display = "block";
     })
 }
+
+
+// ------------------------------------Cart---------------------------------------
+const colorCart = document.querySelectorAll(".cart_content_right_text p i");
+console.log(colorCart);
+setInterval(function(){
+    colorCart.forEach(function(color){
+        color.classList.toggle("color1");
+    })
+}, 200);
