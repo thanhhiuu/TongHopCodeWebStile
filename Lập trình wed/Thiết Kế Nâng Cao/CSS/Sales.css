@@ -1100,3 +1100,96 @@ header .menubar ul li .fa-search {
 .border_top {
     border-top: 1px solid #dddddd;
 }
+
+/* -------------------------style Abate--------------------------- */
+.abate {
+    padding: 100px 0;
+    border-bottom: 3px solid #000;
+}
+.abate .abate_container_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* style .abate_container_left */
+.abate_container_left {
+    /* background-color: #C82E31; */
+    flex-basis: 55%;
+    height: 600px;
+    margin-top: 30px;
+
+}
+.abate_container_left_methods_giaohang h3 {
+    margin-bottom: 20px;
+}
+.abate_container_left_methods_giaohang input {
+    margin: 0px 10px 20px 0px;
+    outline: none;
+}
+.abate_container_left_methods_giaohang p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-style: italic;
+}
+.abate_container_left_methods_thanhtoan p {
+    margin-bottom: 20px;
+}
+.abate_container_left_methods_thanhtoan input {
+    margin: 0px 10px 20px 0px;
+    outline: none;
+}
+.abate_container_left_methods_thanhtoan i {
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+/* style .abate_container_right */
+.abate_container_right {
+    flex-basis: 45%;
+    /* background-color: #16c0eb; */
+    height: 600px;
+    padding-left: 80px;
+    border-left: 1px solid #dddddd;
+}
+.abate_container_right_top .abate_container_right_sale {
+    border-bottom: 1px solid #dddddd;
+}
+.abate_container_right_top .abate_container_right_sale input {
+    background: transparent;
+    outline: none;
+    border: 1px solid #dddddd; 
+    padding: 8px 60px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.abate_container_right_top .abate_container_right_sale button {
+    padding: 6px 45px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #dddddd;
+    background-color: #000;
+}
+.abate_container_right_top .abate_container_right_sale button i {
+    color: #fff;
+    font-size: 20px;
+}
+.abate_container_right_top .abate_container_right_sale button i:hover {
+    color: #FF3333;
+}
+.abate_container_right_top select {
+    margin: 30px 0;
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+.abate_container_right_bottom table tr th {
+    text-align: left;
+    padding-right: 10px;
+}
+.abate_container_right_bottom table tr td p {
+    padding: 10px 0;  
+}
+.abate_container_right_bottom table tr td {
+    padding: 10px 0;
+}
