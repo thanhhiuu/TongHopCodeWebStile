@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+.content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    background-color: blueviolet;
+}
+.content .content-left {
+    flex-basis: 50%;
+    /* padding: 30px 50px; */
+    /* background-color: rgb(41, 176, 86); */
+}
+.content .content-right {
+    flex-basis: 50%;
+    padding: 0 20px;
+    text-align: justify;
+    /* background-color: red; */
+
+}

@@ -273,14 +273,11 @@ header .menubar ul li .fa-search {
 }
 /* style app-container */
 .app-container {
-    width: 90%;
-    height: 100vh;
-    margin: auto;
     display: flex;
     /* flex-wrap: wrap; */
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-around;
-    margin-bottom: -100px;
+    padding-top: 300px;
 }
 
 /*.footer_container {
@@ -306,7 +303,7 @@ header .menubar ul li .fa-search {
 /* style gioithieu */
 .gioithieu {
     flex-basis: 20%;
-    margin-top: -60px;
+    /* margin-top: -60px; */
     text-align: center;
 }
 .gioithieu p {
@@ -317,7 +314,7 @@ header .menubar ul li .fa-search {
 /* style dichvu */
 .dichvu {
     flex-basis: 20%;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     text-align: center;
 }
 .dichvu p {
@@ -328,7 +325,7 @@ header .menubar ul li .fa-search {
 /* style lienhe */
 .lienhe {
     flex-basis: 20%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     text-align: center;
 }
 .lienhe p {
@@ -339,7 +336,7 @@ header .menubar ul li .fa-search {
 /* style save-gmail */
 .save-gmail {
     flex-basis: 20%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 .save-gmail p {
     padding: 10px 0;
@@ -358,8 +355,8 @@ header .menubar ul li .fa-search {
     width: 80%;
     margin: auto;
     text-align: left;
-    margin-bottom: 20px;
-    margin-top: 25px;
+    /* margin-bottom: 20px;
+    margin-top: 25px; */
 }
 .box-gmail .btn {
     width: 100%;
@@ -388,6 +385,7 @@ header .menubar ul li .fa-search {
 /* style footer  */
 .footer {
     border-top: 1px solid rgb(157, 155, 155);
+    margin-top: 100px;
 }
 .footer p {
     padding: 10px 0;
@@ -400,7 +398,7 @@ header .menubar ul li .fa-search {
 .cartegory {
     height: 100%;
     width: 100%;
-    margin: auto;
+    
     margin-top: -20px;
     /* background-color: #e57f37; */
 }
@@ -1146,7 +1144,7 @@ header .menubar ul li .fa-search {
 .abate_container_right {
     flex-basis: 45%;
     /* background-color: #16c0eb; */
-    height: 600px;
+    height: 60      0px;
     padding-left: 80px;
     border-left: 1px solid #dddddd;
 }

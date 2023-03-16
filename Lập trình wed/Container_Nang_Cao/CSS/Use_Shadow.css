@@ -10,10 +10,11 @@
         justify-content: center;
         align-items: center;
         max-width: 1200px;
+        height: 100vh;
         flex-wrap: wrap;
         background: #161623;
         margin: auto;
-        margin-top: 10%;
+        /* margin-top: 10%; */
 }
 .container .card {
     position: relative;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in form</title>
+    <link rel="stylesheet" href="../CSS/Web_11.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header-content-left">
+                <h1>Sign In To <br><span>Recharge Direct.</span></h1>
+                <p>If you don't have an account <br> You can <a href="#">Reginster Here</a></p>
+            </div>
+            <div class="header-content-right">
+                <div class="login-sign">
+                        <a href="#" class="active sign">Sign Up</a>
+                        <a href="#" class="login">Login</a><br>
+                    </div>
+                <form action="" method="post" id="sign-up" class="sign-up-form">                   
+                    <input type="email" name="" id="" placeholder="Your Email"><br>
+                    <input type="password" name="" id="" placeholder="password"><br>
+                    <a href="#">Forget PassWord</a><br>
+                    <button type="submit">Sign In</button><br>
+
+                    <span>Or Continue With</span>
+                    <div class="header-icon">
+                        <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a>
+                    </div>
+                  <!-- Form 2 -->
+                </form>
+                <form action="" method="post" id="sign-up" class="login-form" style="display: none;">                   
+                    <input type="email" name="" id="" placeholder="Email"><br>
+                    <input type="password" name="" id="" placeholder="password"><br>
+                    <a href="#">Forget PassWord</a><br>
+                    <button type="submit">Login</button><br>
+
+                    <span>Or Continue With</span>
+                    <div class="header-icon">
+                        <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a>
+                    </div>
+                  
+                </form>
+            </div>
+           
+        </div>
+    </section>
+</body>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    
+        // let myBlock = document.querySelector(".login");
+        // myBlock.classList.add("block");
+        // function myClick() {
+        //     myBlock.addEventListener("click", myBlock.classList.add("block"));
+        // }
+        const myBlock = document.querySelector(".sign");
+        const myLine = document.querySelector(".login");
+        if (myBlock) {
+            myBlock.addEventListener("click", function () {
+                document.querySelector(".login-form").style.display = "none";
+                document.querySelector(".sign-up-form").style.display = "block";
+            })
+        }
+        if (myLine) {
+            myLine.addEventListener("click", function () {
+                document.querySelector(".login-form").style.display = "block";
+                document.querySelector(".sign-up-form").style.display = "none";
+            })
+        }
+</script>
+</html>

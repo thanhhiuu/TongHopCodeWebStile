@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển ảnh</title>
+    <link rel="stylesheet" href="../CSS/Chuyen_anh.css">
+</head>
+<body>
+    
+    <div class="backnext">
+        <a href="#" id="back">&lt;</a>
+        <div class="container">
+            <div>
+                <img src="../IMG/1.jpg" alt="">
+                <img src="../IMG/2.jpg" alt="">
+                <img src="../IMG/6.jpg" alt="">
+                <img src="../IMG/4.jpg" alt="">
+            </div>
+            <div>
+                <img src="../IMG/5.jpg" alt="">
+                <img src="../IMG/7.jpg" alt="">
+                <img src="../IMG/8.jpg" alt="">
+                <img src="../IMG/9.jpg" alt="">
+            </div>
+            <div>
+                <img src="../IMG/5.jpg" alt="">
+                <img src="../IMG/8.jpg" alt="">
+                <img src="../IMG/11.jpg" alt="">
+                <img src="../IMG/10.jpg" alt="">
+            </div>
+            <div>
+                <img src="../IMG/4vxc .jpg" alt="">
+                <img src="../IMG/7.jpg" alt="">
+                <img src="../IMG/1.jpg" alt="">
+                <img src="../IMG/2.jpg" alt="">
+            </div>
+        </div>
+        <a href="#" id="next">&gt;</a>
+    </div>
+</body>
+<script>
+    let scrollContainer = document.querySelector(".container");
+    let back = document.querySelector("#back");
+    let next = document.querySelector("#next");
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    next.addEventListener("click", ()=> {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 900;
+    })
+   
+    
+    back.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior =  "smooth";
+        scrollContainer.scrollLeft -= 900;
+    })
+</script>
+</html>
