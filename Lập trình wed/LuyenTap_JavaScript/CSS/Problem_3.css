@@ -1,0 +1,10 @@
+.rounded {
+    width: 600px;
+    height: 300px;
+}
+.use {
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    text-align: center;    
+}

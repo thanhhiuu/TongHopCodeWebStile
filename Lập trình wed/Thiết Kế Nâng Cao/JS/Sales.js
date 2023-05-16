@@ -31,7 +31,7 @@ function imgSlider() {
     dotItems[index].classList.add("active");
 
 }
-setInterval(imgSlider, 5000);
+setInterval(imgSlider, 6000);
 function slider(index) {
     imgContainer.style.left = "-" + index * 100 + "%";
     const dotActive = document.querySelector(".active");

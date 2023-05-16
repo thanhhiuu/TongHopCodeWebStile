@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-product {
+    /* background-color: aqua; */
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.container-product .container-imgBig {
+    flex-basis: 60%;
+    /* background-color: blue; */
+}
+.container-product .container-imgSmaill {
+    flex-basis: 40%;
+    /* background-color: rgb(40, 188, 65); */
+}
+.container-product .container-imgBig .imgBig {
+    width: 500px;
+    height: 520px;
+    /* background-color: brown; */
+    margin: auto;
+}
+.container-product .container-imgBig .imgBig img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-product .container-imgBig .imgBig img:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 20px 30px #000;
+    overflow: scroll;
+}
+.container-product .container-imgSmaill .imgSmail .imgSmail-content {
+    width: 140px;
+    height: 140px;
+    /* background-color: darkcyan;     */
+    margin: 10px 0;
+}
+.container-product .container-imgSmaill .imgSmail .imgSmail-content img {
+    width: 100%;
+    height: 100%;
+}
+.container-product .container-imgSmaill .imgSmail .imgSmail-content:first-child {
+    content: "";
+    margin-top: 30px;
+}
+.container-product .container-imgSmaill .imgSmail {
+    width: 300px;
+    height: 470px;
+    /* background-color: rgb(226, 195, 38); */
+}

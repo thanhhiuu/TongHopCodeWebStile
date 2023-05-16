@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ứng dụng Boostrap</title>
+  <link rel="stylesheet" href="../cssBTrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/Chapter_01.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style></style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container-fluid header-top d-flex justify-content-between align-items-center ">
+      <div class="header_top_left">
+        <a href="#" class="text-white text-decoration-none"><i class="fa-sharp fa-solid fa-phone"></i>
+          039.307.4090</a><br>
+        <a href="#" class="text-white text-decoration-none"><i class="fa-sharp fa-solid fa-envelope "></i> thanhhieu961906@gmail.com</a>
+      </div>
+      <div class="header_top_right">
+        <i class="text-white fa-sharp fa-solid fa-user text fs-5 mx-3"></i>
+        <i class="fa fa-facebook text-white text fs-5 mx-3" aria-hidden="true"></i>
+        <i class="fa fa-twitter text-white text fs-5 mx-3" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="header-menu" style="margin-bottom: 20px;">
+
+      <ul class="nav container-fluid d-flex justify-content-between ">
+        <div class="logo">
+          <h2 class="fw-bold"><a href="#"><i class="fa fa-book aria-hidden=" true"></i></a>INSTRODUCT <br> <span
+              class="text-success">EDUCATION</span></h2>
+        </div>
+        <div class="item-menu justify-content-center align-items-center d-flex">
+          <li class="nav-item">
+            <a class="nav-link text-uppercase active" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#">about</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"><span class="dropdown-toggle ">Page
+              </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#">Cat</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </header>
+  <section class="panner container-fluid">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <img src="../IMG/panner1.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-caption  mt-5  position-absolute top-50 start-50 translate-middle d-none d-md-block">
+            <h5 class="fs-1 fw-semibold">Thử thách</h5>
+            <p class="fs-5">Trên con đường thành công không có sự lười biếng !.</p>
+            <button type="button" class="btn btn-outline-success">Read More</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../IMG/panner2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption mt-5 position-absolute top-50 start-50 translate-middle d-none d-md-block">
+            <h5 class="fs-1 fw-semibold">Cuộc sống</h5>
+            <p class="fs-5">Cơ hội luôn có, chỉ là bạn có biết nắm bắt hay không !.</p>
+            <button type="button" class="btn btn-outline-success">Read More</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../IMG/panner3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption mt-5 position-absolute top-50 start-50 translate-middle d-none d-md-block">
+            <h5 class="fs-1 fw-semibold">Sức mạnh</h5>
+            <p class="fs-5">Sức mạnh luôn tìm ẩn trong một con người nhiệt huyết và bản lĩnh.</p>
+            <button type="button" class="btn btn-outline-success">Read More</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="welcome py-5">
+    <div class="container">
+      <div class="heading text text-center py-5">
+        <h2 class="fs-2 fw-bold">WELCOME TO EDUCATION</h2>
+        <p class="">When Climbing The Carrer Ladder</p>
+      </div>
+      <div class="welcome-content text text-center">
+        <p class="fw-light text-secondary my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          cupiditate voluptates obcaecati perferendis libero autem debitis cum odio sunt quaerat?</p>
+        <div class="welcome_content_col container mt-5">
+          <div class="row">
+            <div class="col border border-dark  px-1 py-4 ">
+              <i class="fa fa-desktop fs-3" aria-hidden="true"></i>
+              <h3 class="fw-bold">Design Course</h3>
+              <h4 class="text-uppercase fs-6 fw-bold">Fashion Design</h4>
+              <p class="text-secondary">Ncididunt ut labore et t emin ad minium.</p>
+              <h4 class="text-uppercase fs-6 fw-bold">Interior Design</h3>
+                <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+                <h4 class="text-uppercase fs-6 fw-bold">Graphic Design</h4>
+                <p class="text-secondary">Lorem ipsum dolor sit amet.s</p>
+            </div>
+            <div class="col border border-dark px-1 py-4">
+              <i class="fa fa-arrows fs-3" aria-hidden="true"></i>
+              <h3 class="fw-bold">Design Course</h3>
+              <h4 class="text-uppercase fs-6 fw-bold ">Fashion Design</h4>
+              <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+              <h4 class="text-uppercase fs-6 fw-bold">Interior Design</h3>
+                <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+                <h4 class="text-uppercase fs-6 fw-bold">Graphic Design</h4>
+                <p class="text-secondary">Lorem ipsum dolor sit amet.s</p>
+            </div>
+            <div class="col border border-dark  px-1 py-4">
+              <i class="fa fa-bar-chart fs-3" aria-hidden="true"></i>
+              <h3 class="fw-bold">Design Course</h3>
+              <h4 class="text-uppercase fs-6 fw-bold ">Fashion Design</h4>
+              <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+              <h4 class="text-uppercase fs-6 fw-bold">Interior Design</h3>
+                <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+                <h4 class="text-uppercase fs-6 fw-bold">Graphic Design</h4>
+                <p class="text-secondary">Lorem ipsum dolor sit amet.s</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="outstart container">
+    <div class="container">
+      <div class="heading text text-center py-5">
+        <h2 class="fs-2 fw-bold">OUR START</h2>
+        <p class="">When Climbing The Carrer Ladder</p>
+      </div>
+      <div class="heading-content-col">
+        <div class="row text-center">
+          <div class="col">
+            <i class="fa fa-graduation-cap fs-3 text-white" aria-hidden="true"></i>
+            <h3 class="fs-4 my-3">Graduates</h3>
+            <p class="text-white fs-4">45</p>
+          </div>
+          <div class="col">
+            <i class="fa fa-user fs-3 text-white" aria-hidden="true"></i>
+            <h3 class="fs-4 my-3">User</h3>
+            <p class="text-white fs-4">45</p>
+          </div>
+          <div class="col">
+            <i class="fa fa-users fs-3 text-white" aria-hidden="true"></i>
+            <h3 class="fs-4  my-3">Team</h3>
+            <p class="text-white fs-4">45</p>
+          </div>
+          <div class="col">
+            <i class="fa fa-trophy fs-3 text-white" fs-3 text-white" aria-hidden="true"></i>
+            <h3 class="fs-4  my-3">Win Cup</h3>
+            <p class="text-white fs-4">45</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="offer">
+    <div class="container">
+      <div class="heading text text-center py-5">
+        <h2 class="fs-2 fw-bold">WHAT WE OFFER</h2>
+        <p class="">When Climbing The Carrer Ladder</p>
+      </div>
+    </div>
+    <div class="offer-content-col">
+      <div class="row text-center d-flex align-items-center justify-content-around py-4 px-4">
+        <div class="col-3 shadow-lg py-4">
+          <i class="fa fa-graduation-cap fs-3 text-white" aria-hidden="true"></i>
+          <h3 class="fs-5">UNDERGRADUATE STUDY</h3>
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nesciunt.</p>
+        </div>
+        <div class="col-3 shadow-lg py-4">
+          <i class="fa fa-book fs-3 text-white" aria-hidden="true"></i>
+          <h3 class="fs-5">PROFESSIONAL STUDY</h3>
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nesciunt.</p>
+        </div>
+        <div class="col-3 shadow-lg py-4">
+          <i class="fa fa-align-left fs-3 text-white" aria-hidden="true"></i>
+          <h3 class="fs-5">PROGRAMS</h3>
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nesciunt.</p>
+        </div>
+      </div>
+      <!-- row 2 -->
+      <div class="row text-center d-flex align-items-center justify-content-around py-4 px-4">
+        <div class="col-3 shadow-lg py-4">
+          <i class="fa fa-comment-o fs-3 text-white" aria-hidden="true"></i>
+          <h3 class="fs-5">ONLINE LEARNING</h3>
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nesciunt.</p>
+        </div>
+        <div class="col-3 shadow-lg py-4">
+          <i class="fa fa-bookmark-o fs-3 text-white" aria-hidden="true"></i>
+          <h3 class="fs-5">SUMMER SESSION</h3>
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nesciunt.</p>
+        </div>
+        <div class="col-3 shadow-lg py-4">
+          <i class="fa fa-globe fs-3 text-white" aria-hidden="true"></i>
+          <h3 class="fs-5">GLOBAL EDUCATION</h3>
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nesciunt.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section class="feedback">
+    <div class="container">
+      <div class="heading text text-center py-5">
+        <h2 class="fs-2 fw-bold">NEW & EVENT</h2>
+        <p class="">When Climbing The Carrer Ladder</p>
+      </div>
+      <div class="feefback-content-row">
+        <div class="row my-5">
+          <div class="col-5">
+            <img src="../IMG/panner3.jpg" alt="" style="width: 100%; height: 100%s;">
+          </div>
+          <div class="col-7">
+            <h3><a data-bs-toggle="modal" data-bs-target="#feedback-new" href="#"
+                class=" text-decoration-none fw-bold">SIT AMET JUSTO VITAE </a></h3>
+            <h4 class="fs-6 fw-bold">08/20/2003</h4>
+            <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid libero quas
+              illo. Recusandae excepturi enim expedita iure incidunt ducimus deleniti maxime iusto amet in omnis
+              voluptate, reiciendis autem sequi eius dicta! Mollitia vero officiis exercitationem modi, officia
+              consequuntur nulla sit nisi totam expedita minus, repellendus quaerat corporis, est excepturi. Quia dolor
+              odit vitae provident tempora ab nobis porro nostrum necessitatibus temporibus, pariatur maiores ea,
+              perferendis assumenda quasi natus. Nostrum iure, aperiam est, cum tempore incidunt eum aliquid at atque
+              rerum quos quas. Iure, dolores iusto? Magnam sequi incidunt est praesentium, reiciendis repudiandae
+              repellat nobis earum a, sunt ab dolore quaerat.</p>
+              <button data-bs-toggle="modal" data-bs-target="#feedback-new" type="button" class="btn btn-outline-success">Read More</button>
+          </div>
+        </div>
+
+        <!-- row 2 -->
+        <div class="row">
+          <div class="col-7">
+            <h3><a href="#" data-bs-toggle="modal" data-bs-target="#feedback-new"
+                class=" text-decoration-none fw-bold ">SIT AMET JUSTO VITAE</a></h3>
+            <h4 class="fs-6 fw-bold">08/20/2003</h4>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit
+              sapiente. Natus explicabo hic sint totam earum! Veniam doloremque dolores quo expedita quasi sunt
+              consequatur autem ex facere nesciunt debitis praesentium velit fugit nemo quibusdam alias rem repellat
+              reprehenderit, ab distinctio quas voluptates tempora! Blanditiis molestiae aut harum facilis repellat
+              perferendis sit tempore earum repellendus quas ipsam fugit necessitatibus vitae officiis nostrum, debitis
+              corporis, magni consequuntur ratione dignissimos delectus? Eaque temporibus est sequi amet laborum
+              distinctio molestiae ea id optio fugit rem facere, repudiandae similique? Fugit sit, debitis asperiores
+              inventore totam, autem nulla dolorem architecto ab, voluptatum quia dolorum quidem!</p>
+              <button data-bs-toggle="modal" data-bs-target="#feedback-new" type="button" class="btn btn-outline-success">Read More</button>
+          </div>
+          <div class="col-5">
+            <img src="../IMG/panner1.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="new">
+    <div class="container">
+      <div class="heading text text-center py-5">
+        <h2 class="fs-2 fw-bold">TESTIMONIALS</h2>
+        <p class="">When Climbing The Carrer Ladder</p>
+      </div>
+      <div class="new-carousel-content container">
+        <div class="new-carousel-content-card">
+          <p></p>
+          
+        </div>
+        <div class="new-carousel-content-card">
+          <p></p>
+          
+        </div>
+        <div class="new-carousel-content-card">
+          <p></p>
+          
+        </div>
+        <div class="new-carousel-content-card">
+          <p></p>
+          
+        </div>
+        <div class="new-carousel-content-card">
+          <p></p>
+          
+        </div>
+        <div class="new-carousel-content-card">
+          <p></p>
+          
+        </div>
+      </div>
+
+      <div class="position-dot">
+        <div class="dot active" id="back"></div>
+        <div class="dot active  " id="next"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-text top-50 start-50 translate-middle ">
+        <div class="footer-left">
+          <h2 class="fs-1 fw-bold text-uppercase  mx-2 ">About Us</h2>
+          <p class="text-white  mx-2 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quo ipsum aliquam ipsam non illo.</p>
+        </div>
+        <div class="footer-center">
+          <h2 class="fs-1 fw-bold text-uppercase  mx-2 ">Lasest News</h2>
+          <p class="text-white d-flex align-items-center"><i class="fa fa-long-arrow-right mx-2 mx-2 fs-3  text-white " aria-hidden="true"></i>Lorem ipsum dolor sit amet.</p>
+          <p class="text-white d-flex align-items-center"><i class="fa fa-long-arrow-right mx-2 fs-3  text-white " aria-hidden="true"></i>Lorem ipsum dolor sit amet.</p>
+          <p class="text-white d-flex align-items-center"><i class="fa fa-long-arrow-right mx-2 fs-3 text-white " aria-hidden="true"></i>Lorem ipsum dolor sit amet.</p>
+          <p class="text-white d-flex align-items-center"><i class="fa fa-long-arrow-right mx-2 fs-3 text-white " aria-hidden="true"></i>Lorem ipsum dolor sit amet.</p>
+          <p class="text-white d-flex align-items-center"><i class="fa fa-long-arrow-right mx-2 fs-3 text-white " aria-hidden="true"></i>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="footer-right">
+          <h2 class="fs-1 fw-bold text-uppercase mx-2">Contact Info</h2>
+          <p class="text-white  d-flex align-items-center"><i class="fa fa-map-marker mx-2  fs-3 " aria-hidden="true"></i>112 Cao Thắng, Quận 3 - HCM</p>
+          <p class="text-white  d-flex align-items-center"><i class="fa fa-envelope-o  mx-2 fs-3 " aria-hidden="true"></i>thanhhieu961906@gmail.com</p>
+          <p class="text-white  d-flex align-items-center"><i class="fa fa-phone  mx-2 fs-3 " aria-hidden="true"></i>039.333.9944</p>
+        </div>     
+    </div>
+    <div class="email-footer">
+      <form action="" method="post" class="d-flex container justify-content-between align-items-center">
+        <h1 class="text-white fs-2">Sign In Email </h1>
+      <input type="text" placeholder="Nhập gmail để đăng ký">
+      <button type="submit" class="btn btn-outline-success">Submit</button>
+      </form>
+
+    </div>
+    <div class="footer-text-email">
+          <p class="text-white fs-4 fw-bold">Chân đây nha</p>
+          
+        </div>
+      
+  </footer>
+  <!-- Modal -->
+  <div class="modal modal-feedback" id="feedback-new" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">EDUCATION</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="../IMG/panner1.jpg" class="img-fluid" alt="">
+          <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum doloribus
+            perspiciatis asperiores? Explicabo, id illum maxime quo voluptatum et consectetur exercitationem molestias
+            ullam rem illo, similique asperiores maiores aut quod fuga sunt! Repellendus dicta neque laborum recusandae
+            illum esse sint optio, fuga aut cupiditate provident. Ipsam expedita nam minima!
+
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- script JS -->
+  <script type="text/javascript" src="../JS/vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".col-3"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 1
+    });
+    VanillaTilt.init(document.querySelectorAll(".new-carousel-content-card"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 1
+    });
+
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".col-3"));
+  </script>
+</body>
+<script src="../jsBTrap/bootstrap.bundle.min.js"></script>
+<script src="../jsBTrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+  integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../JS/Chapter_01.js"></script>
+
+</html>
