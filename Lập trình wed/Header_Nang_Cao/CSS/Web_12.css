@@ -1,0 +1,144 @@
+*, *::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dark-theme {
+    background-color: #000;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+:root {
+    --background-color: #000;
+    --text-color: #555;
+    --title-color: #000;
+}
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-header .logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+.container-header .logo span {
+    color: rgb(198, 47, 50);
+}
+.container-header nav ul {
+    list-style: none;
+    display: inline;
+}
+.container-header nav ul li a { 
+    text-decoration: none;
+    color: #000;
+}
+.container-header nav ul li {
+    display: inline-block;
+    margin: 30px 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s all;
+    text-transform: uppercase;
+}
+.container-header nav ul li:hover {
+    color:  rgb(32, 157, 247);    
+
+}
+.container-header .dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 35px;
+    background-color:rgb(32, 157, 247) ;
+    border-radius: 20px;
+    font-weight: bold;
+    outline: none;
+}
+.container-header .dark img {
+    width: 25px;
+    margin-left: 10px;
+}
+header .container-text {
+    width: 570px;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+header .container-text h1 {
+    font-size: 70px;
+    letter-spacing: 8px;
+}
+header .container-text h2 span {
+    font-style: italic;
+    font-size: 50px;
+}
+header .container-text h2 {
+    font-size: 60px; 
+}
+header .container-text p {
+    line-height: 1.7;
+    letter-spacing: 1.5px;
+}
+header .container-text button {
+    border: none;
+    font-size: 17px;
+    background: transparent ;
+    padding: 10px 40px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+    /* background-color: rgb(32, 157, 247); */
+}
+header .container-text button::after {
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    position: absolute;
+    background-color: rgb(32, 157, 247);
+    transition: 0.5s all;
+    z-index: -1;
+}
+header .container-text button:hover::after {
+    width: 100%;
+}
+header .img-people  {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    z-index: 5;
+}
+header .img-people img{
+    width: 400px;
+    height: 500px;
+}
+
+header .img-background img:nth-child(1) {
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    right: 4%;
+    top: 28%;
+    transform: rotateX(180deg);
+}
+header .img-background img:nth-child(2) {
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    right: 18%;
+    top: 40%;
+}

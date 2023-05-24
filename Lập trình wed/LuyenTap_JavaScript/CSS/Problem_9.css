@@ -1,0 +1,125 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.hero {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+}
+.row-hero {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row-hero .col {
+    flex-basis: 45%;
+    /* background-color: rgb(49, 83, 162); */
+}
+.slider-hero {
+    height: 80vh;
+    display: flex;
+}
+.row-hero .col .slider-hero .product img {
+    height: 19vh;
+    margin-bottom: 7px;
+    cursor: pointer;
+} 
+/* .row-hero .col .slider-hero .product img:hover {
+    opacity: 1;
+} */
+.colorimage {
+    transform: scale(1.1); 
+}
+.row-hero .col .slider-hero .preview img {
+    height: 100%;
+    margin-left: 20px;
+}
+.review-col h5 {
+    color: #000;
+    font-size: 16px;
+    background-color: rgb(147, 227, 147);
+    width: 170px;
+}
+.review-col h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.review-col h3 {
+    font-weight: bold;
+}
+.review-col p {
+    font-size: 20px;
+}
+.review-col p select {
+    width: 200px;
+    outline: none;
+} 
+.review-col p input {
+    width: 40px;
+}
+.review-col button {
+    border: none;
+    background: transparent;
+    padding: 10px 30px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    transition: 0.5s all;
+}
+.review-col button:hover {
+    background-color:rgb(147, 227, 147);
+}
+
+
+
+/* --------------------item-relates------------------- */
+.item-relates {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+}
+.item-relates .item-relates-row {
+    width: 90%;
+    height: 85vh;
+    /* background-color: blue; */
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.item-relates .item-relates-text {
+    width: 90%;
+    margin: auto;
+    color: #666;
+}
+.item-relates .item-relates-row .col {
+    text-align: center;
+    /* background-color: goldenrod; */
+}
+.item-relates .item-relates-row .col img {
+    width: 100%;
+    object-fit: cover;
+}
+.item-relates .item-relates-row .col h4 {
+    font-size: 20px;
+}
+.item-relates .item-relates-row .col p {
+    font-style: italic;
+}
+.item-relates .item-relates-row .col button {
+    border: none;
+    background: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    border: 1px solid #000;
+    transition: 0.6s all ;
+}
+.item-relates .item-relates-row .col button:hover {
+    background-color: rgb(147, 227, 147) ;
+}

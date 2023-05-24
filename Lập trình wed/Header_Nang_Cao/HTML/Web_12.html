@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header - Dark and Light</title>
+    <link rel="stylesheet" href="../CSS/Web_12.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+</head>
+
+<body>
+    <header data-header>
+        <div class="container-header">
+            <div class="logo">AWD<span>.</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Phone</a></li>
+                </ul>
+            </nav>
+            <div class="dark">
+                <span>Dark</span>
+                <div class="img-darkk">
+                    <img src="../img/sun.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container-text">
+            <h1>Hello!</h1>
+            <h2><span>I'm</span> Andrew Hiu</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum dolorum laudantium, quo dolorem
+                voluptatum ea quaerat repellendus cupiditate?</p>
+            <button data-button>Hire Me</button>
+        </div>
+        <div class="img-people">
+            <img src="../img/user.png" alt="">
+        </div>
+        <div class="img-background">
+            <img src="../img/background.png" alt="">
+            <img src="../img/background.png" alt="">
+        </div>
+    </header>
+</body>
+<script>
+    let dark = document.querySelector(".dark")
+    let menu = document.querySelectorAll("nav ul li a")
+    let btnText = document.querySelector("[data-header]")
+    let btnButton = document.querySelector("[data-button]")
+    let btnRest = document.querySelector(".dark span")
+    let btnRestImg = document.querySelector(".img-darkk img")
+    dark.addEventListener("click", function btn() {
+        document.body.classList.toggle("dark-theme")
+        if (document.body.classList.contains("dark-theme")) {
+            btnText.style.color = "white";
+            btnButton.style.color = "white";
+            btnRest.innerText = "Light";
+            btnRestImg.src = "../img/moon.png";
+            menu.forEach((e) => {
+                e.style.color = "white";
+            })
+        } else {
+            btnText.style.color = "black";
+            btnRest.innerText = "Dark";
+            btnRestImg.src = "../img/sun.png";
+            btnButton.style.color = "black";
+            menu.forEach((e) => {
+                e.style.color = "black";
+            })
+        }
+
+    })
+</script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+
+</html>

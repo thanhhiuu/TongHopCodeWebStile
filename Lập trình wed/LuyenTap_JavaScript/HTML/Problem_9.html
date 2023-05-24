@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi ảnh bằng cách click vào ảnh khác</title>
+    <link rel="stylesheet" href="../CSS/Problem_9.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="row-hero">
+            <div class="col">
+                <div class="slider-hero">
+                    <div class="product">
+                        <img src="../IMG/product1.png" alt="" onclick="clickme(this)">
+                        <img src="../IMG/product2.png" alt="" onclick="clickme(this)">
+                        <img src="../IMG/product3.png" alt="" onclick="clickme(this)">
+                        <img src="../IMG/product4.png" alt="" onclick="clickme(this)">
+                    </div>
+                    <div class="preview">
+                        <img src="../IMG/product1.png" id="imagebox" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="review-col">
+                    <h5>Proview: Varanga</h5>
+                    <h1>Đầm dài cho phụ nữ</h1>
+                    <h3>Giá: 100.000 <sub style="font-style:italic ;">VNĐ</sub></h3>
+                        <p>
+                            Size: <select>
+                                <option value="1">L</option>
+                                <option value="2">M</option>
+                                <option value="3">XL</option>
+                                <option value="4">XXL</option>
+                            </select>
+                        </p>
+                        <p>Số Lượng: <input type="number"></p>
+                        <button>
+                            Mua Hàng
+                        </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-relates">
+        <div class="item-relates-text">
+            <h1>Relates Item</h1>
+        </div>
+        <div class="item-relates-row">
+            <div class="col"><img src="../IMG/item1.png" alt="">
+                <h4>Áo khoác chống nắng</h4>
+                <p>Giá: 500.000 <sub>VNĐ</sub></p>
+                <button>Read Mode</button>
+            </div>
+            <div class="col"><img src="../IMG/item2.png" alt="">
+                <h4>Chân Váy chống nắng</h4>
+                <p>Giá: 200.000 <sub>VNĐ</sub></p>
+                <button>Read Mode</button>
+            </div>
+            <div class="col"><img src="../IMG/item3.png" alt="">
+                <h4>Tà Áo chống nắng</h4>
+                <p>Giá: 300.000 <sub>VNĐ</sub></p>
+                <button>Read Mode</button>
+            </div>
+            <div class="col"><img src="../IMG/item4.png" alt="">
+                <h4>Áo Dài chống nắng</h4>
+                <p>Giá: 300.000 <sub>VNĐ</sub></p>
+                <button>Read Mode</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../JS/Problem_9.js"></script>
+
+</html>

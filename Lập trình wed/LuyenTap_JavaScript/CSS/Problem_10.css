@@ -1,0 +1,49 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;   
+}
+.container-box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 23, 23);
+}
+.container-box input {
+    border: none;
+    background: transparent;
+    width: 50vw;
+    height: 6vh;
+    border: 1px solid #fff;
+    position: relative;
+    padding: 0PX 20PX;
+    font-size: 16PX;
+    text-transform: capitalize;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 0px 10px 10px rgb(57, 11, 61);
+    
+}
+ button {
+        position: absolute;
+        right: 27%;  
+}
+button  img {
+    width: 25px;
+    height: 30px;
+}
+#message {
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    color: #fff;
+    display: none;
+}
