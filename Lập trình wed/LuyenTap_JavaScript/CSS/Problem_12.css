@@ -1,0 +1,90 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #add5f2;
+}
+.show {
+    opacity: 1;
+}
+.show-more {
+    border: none;
+    background: transparent;
+    padding: 15px 30px;
+    /* border: 1px solid #5d5050; */
+    border-radius: 10px;
+    background-color: #4a98f7;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+
+}
+.container-draggable {
+    position: fixed;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.container-draggable.show {
+    opacity: 1;
+    pointer-events: all;
+}
+.container-draggable .sheet-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+}
+.container-draggable .content {
+    height: 50vh;
+    max-height: 100vh;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 25px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1350px;
+    position: relative;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+.container-draggable.show .content {
+    transform: translateY(0%);
+
+}
+.container-draggable .body-content {
+    overflow-y: auto;
+    height: 100%;
+    scrollbar-width: none;
+}
+.container-draggable .body-content::-webkit-scrollbar {
+    width: 0;
+}
+.content .header {
+    width: 100%;
+}
+.content .header .draggable-span span {
+    font-weight: bold;
+    font-size: 20px;
+    cursor: grab;
+    user-select: none;
+    scroll-behavior: smooth;
+}

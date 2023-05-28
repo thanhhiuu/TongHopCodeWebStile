@@ -10,10 +10,10 @@ package com.mycompany.java_nang_cao;
  */
 public class Bien_trong_Java {
     public static void main(String[] args) {
-        int x = 100; // Tạo biến và khởi tạo giá trị
-        long y = 124312424214321321L;
-        double u = 3.14;
-        char symbol = '@';
+        // int x = 100; // Tạo biến và khởi tạo giá trị
+        // long y = 124312424214321321L;
+        // ndouble u = 3.14;
+        /// char symbol = '@';
         String name = "Nguyen Thanh Hieu";
         System.out.println(name);
         
