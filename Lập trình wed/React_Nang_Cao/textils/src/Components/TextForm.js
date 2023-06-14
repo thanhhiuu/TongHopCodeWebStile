@@ -32,7 +32,7 @@ export default function TextForm(props) {
 
     // Credits: Coding Wala
     const handleExtraSpaces = () => {
-        let newText = text.split(/[ ]+/);
+        let newText = text.split(/[ ]+/); // Lấy khoảng trắng dư
         setText(newText.join(" "));
         props.showAlert("Extra spaces removed!", "success");
     }
@@ -47,11 +47,11 @@ export default function TextForm(props) {
             <div className="mb-3"> 
             <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'#13466e':'white', color: props.mode==='dark'?'white':'#042743'}} id="myBox" rows="8"></textarea>
             </div>
-            <button  className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>In Hoa</button>
-            <button  className="btn btn-primary mx-1 my-1" onClick={handleLoClick}>In thường</button>
-            <button  className="btn btn-primary mx-1 my-1" onClick={handleClearClick}>Xóa</button>
-            <button  className="btn btn-primary mx-1 my-1" onClick={handleCopy}>Sao chép</button>
-            <button  className="btn btn-primary mx-1 my-1" onClick={handleExtraSpaces}>Xóa khoảng trắng</button>
+            <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>In Hoa</button>
+            <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleLoClick}>In thường</button>
+            <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleClearClick}>Xóa</button>
+            <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleCopy}>Sao chép</button>
+            <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleExtraSpaces}>Xóa khoảng trắng</button>
         </div>
         <div className="container my-3" style={{color: props.mode==='dark'?'white':'#042743'}}>
             <h2>Bản tóm tắt</h2>

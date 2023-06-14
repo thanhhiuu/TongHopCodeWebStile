@@ -13,7 +13,7 @@ import {
  
 function App() {
   const [mode, setMode] = useState('light'); // Whether dark mode is enabled or not
-  const [alert, setAlert] = useState(null);
+  const [alert, setAlert] = useState(null);  
 
   const showAlert = (message, type)=>{
       setAlert({
@@ -24,17 +24,25 @@ function App() {
           setAlert(null);
       }, 1500);
   }
+  const removeBgMode = () => {
+    document.body.classList.remove('bg-primary');
+    document.body.classList.remove('bg-success');
+    document.body.classList.remove('bg-danger');
+    document.body.classList.remove('bg-warning');
+  }
+  const toggleMode = (lst)=>{    
+    removeBgMode();
+    document.body.classList.add('bg-' + lst);
 
-  const toggleMode = ()=>{
     if(mode === 'light'){
       setMode('dark');
       document.body.style.backgroundColor = '#042743';
-      showAlert("Đã bật chế độ tối", "Thành Công");
+      showAlert("Đã bật chế độ tối", "danger");
     }
     else{
       setMode('light');
       document.body.style.backgroundColor = 'white';
-      showAlert("Đã bật chế độ sáng", "Thành công");
+      showAlert("Đã bật chế độ sáng", "danger");
     }
   }
   return (

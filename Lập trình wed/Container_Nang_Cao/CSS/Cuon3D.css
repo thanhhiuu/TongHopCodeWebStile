@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;  
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 20px;
+}
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.cay {
+    transform: translateZ(-10px) scale();
+}
+.nui {
+    transform: translateZ(-10px) scale(1.5);
+}
+.cay, 
+.nui {
+    position: absolute ;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+section {
+    background-color: rgb(61, 58, 58);
+    color: #fff;
+    padding: 2rem;
+}
+.title {
+    font-size: 7rem;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+}
+
+  

@@ -1,0 +1,38 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+.search-input {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.search { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.search .title label{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+.search input[type="search"] {
+    width: 300px;
+    margin: 20px 0;
+    height: 40px;
+}
+.search-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+.search-content .card {
+    border: 1px solid black;
+    padding: .35rem;
+}
+.card .search-header {
+    font-size: 1.8rem;
+    margin-bottom: 5px
+}
+.card .search-body {
+    font-size: 1.25rem;
+}
