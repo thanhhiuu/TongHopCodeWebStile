@@ -1,0 +1,56 @@
+body {
+    position: relative; 
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container i {
+    position: relative;
+    font-size: 80px;
+}
+
+.container .message::before {
+    position: absolute;
+    content: attr(data-count);
+    /* content: "1"; */
+    top: 3px;
+    right: -3px;
+    padding: 7px 10px;
+    background-color: red;
+    border-radius: 25px;
+    z-index: 1;
+    line-height: 100%;
+    opacity: 0;
+    transition:  opacity 0.2s ease-out;
+    animation: messageRun .9s ease-out infinite alternate;
+}
+@keyframes messageRun {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+.container button {
+    margin: 10px 0px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: transparent;
+    border: 1px solid #888;
+    outline: none;
+    cursor: pointer;
+}
+.container button:hover {
+    background-color: rgb(29, 29, 187);
+    transition: .4s all ease-in;
+}
+.message.active::before {
+    opacity: 1;
+}
