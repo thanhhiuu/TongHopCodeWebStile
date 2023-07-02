@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import React, {useState, useEffect} from 'react'
+
+export default function App() {
+  const [source, setSource] =  useState('post');
+  const clickInhoa = () => {
+    setSource("Hello")
+  }
+
+  useEffect(() => {
+    console.log("Xin chao cac ban")
+  }, [source])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='container text-center' style={{marginTop: '20px'}}>
+        <button className='btn btn-primary' onClick={clickInhoa}>Hello</button>
+        <button className='btn btn-primary mx-4' onClick={() => {setSource('Xin chao')}}>Xin chao</button>
+        <button className='btn btn-primary' onClick={() => {setSource('Hiii')}}>Hiii</button>
+      </div>
+      <h1 className='text-center my-4' >{source.length > 1?source.toUpperCase():"Khong co thong tin"}</h1>
+    </>
   );
 }
 
-export default App;

@@ -5,8 +5,8 @@ export class Newitem extends Component {
     let {title, blogContent, imageUlr, newULR, author, date, source} = this.props;
     return (
       <div>
-        <div className="card  m-auto" style={{width: "25rem", height: ""}}>
-        <span className="position-absolute top-0  translate-middle badge rounded-pill bg-danger" style={{left: "84%"}}>
+        <div className="card  position-relative d-flex   m-auto" style={{width: "100%", height: "", display: 'flex', alignItems:'self-end', justifyContent: "self-end"}}>
+        <span className="position-absolute badge rounded-pill bg-danger" style={{}}>
         {source}
   </span>
           <img style={{height: '180px', objectFit: "cover"}} src={imageUlr === null?"https://www.investors.com/wp-content/uploads/2021/01/Stock-Tesla-modelY-01-adobe.jpg":imageUlr} className="card-img-top" alt="..."/>

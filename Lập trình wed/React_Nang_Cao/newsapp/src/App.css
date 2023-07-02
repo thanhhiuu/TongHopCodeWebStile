@@ -16,7 +16,6 @@
   height: 16px;
   border-radius: 50%;
   animation: scale 1s ease-in infinite alternate;
-
 }
 @keyframes rotate {
   100% { transform: rotate(750deg)}
