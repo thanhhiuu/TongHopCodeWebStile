@@ -1,4 +1,9 @@
 
+// Buffer là một cấu trúc dữ liệu dạng mảng được sử dụng để lưu trữ dữ liệu nhị phân trong Node.js.
+//  Nó cho phép bạn làm việc với dữ liệu nhị phân trực tiếp, ví dụ như đọc và ghi file, gửi và nhận dữ liệu qua mạng. 
+//  Bạn có thể tạo một Buffer với kích thước cố định hoặc khởi tạo từ dữ liệu có sẵn. 
+// Buffer cung cấp các phương thức để truy xuất và thao tác với dữ liệu nhị phân một cách hiệu quả.
+
 
 const buffer = Buffer.alloc(10, "dnakjsdhakjsdhaskj"); // Cú pháp : Buffer.alloc(size[, fill[, encoding]])
 console.log(buffer.toString()); // Biến đổi thành chuõi và in ra
