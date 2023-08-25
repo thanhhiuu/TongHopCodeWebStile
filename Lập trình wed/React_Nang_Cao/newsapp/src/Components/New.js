@@ -34,7 +34,7 @@ export class New extends Component {
     // Là một phương thức được gọi sau khi component đã được hiển thị lần đầu tiên
     // Nó được sử dụng để thực hiện các tác uuj khởi tạo hoặc tải dự liệu từ các nguồn bên ngoài API
     this.props.setProgress(10);
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.keyApi}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=12c6f4f8c006432a807fcedec1165904&page=${this.state.page}&pageSize=${this.props.pageSize}`;
 
     this.setState({ loading: true }) // Cập  nhật trạng thái loading thành true => hiện loader (Loader.js)
     let data = await fetch(url);
@@ -77,7 +77,7 @@ export class New extends Component {
   fetchMoreData = async () => { // Hàm này được gọi khi muốn tải thêm dữ liệu tin tức, ví dụ khi người dùng scroll đến cuối trang.s
     // Trước khi gửi yêu cầu tải dữ liệu, trạng thái page được tăng lên để chỉ định trang tiếp theo cần tải.
     // Gọi hàm này khi muốn tải thêm dữ liệu (ví dụ: khi scroll đến cuối trang)
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.keyApi}&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=12c6f4f8c006432a807fcedec1165904&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
     this.setState({ page: this.state.page + 1 })
     this.setState({ loading: true })
     let data = await fetch(url);

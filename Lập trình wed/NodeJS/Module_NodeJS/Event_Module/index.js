@@ -4,7 +4,7 @@ const eventEmit = require("node:events");
 
 const usingEvent = new eventEmit();
 
-usingEvent.on("Mua pizza",  (size, topping) => {
+usingEvent.on("Mua pizza", (size, topping) => {
     console.log(`Okey !, pizza cua ban co size ${size} va ${topping}`);
 })
 

@@ -14,6 +14,7 @@ function fetchData(callback) { // 1 hàm bất đồng bộ
     console.log('Đã nhận được dữ liệu:', data);
   }
   
-  fetchData(processData);
+  fetchData(processData) 
   console.log('Thực thi các tác vụ khác...');
+  
   
