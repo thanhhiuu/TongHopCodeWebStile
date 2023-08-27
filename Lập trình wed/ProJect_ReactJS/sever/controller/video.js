@@ -54,7 +54,6 @@ export const getVideo = async (req, res, next) => {
         next(error);
     }
 }
-Math.floor(Math.random(100))
 export const sub = async (req, res, next) => {
     // Cho tui hỏi đoạn này nó có sai chỗ nào không
     try {
@@ -74,8 +73,32 @@ export const sub = async (req, res, next) => {
 }
 export const random = async (req, res, next) => {
     try {
-        const videoRan = await Video.aggregate([{ $sample: { size: 40 } }]);
+        const videoRan = await Video.aggregate([{ $sample: { size: 1 } }]);
         res.status(200).json(videoRan);
+
+    } catch (error) {
+        next(error);
+    }
+}
+export const getByTag = async (req, res, next) => {
+
+    const tags = req.query.tags.split(",");
+    try {
+        const videos = await Video.find({ tags: { $in: tags } }).limit(20);
+        res.status(200).json(videos);
+
+    } catch (error) {
+        next(error);
+    }
+}
+export const searchs = async (req, res, next) => {
+    const query = req.query.q;
+    try {
+        const videos = await Video.find({
+            title: { $regex: query, $options: "i" },
+        }).limit(40)
+
+        res.status(200).json(videos);
 
     } catch (error) {
         next(error);

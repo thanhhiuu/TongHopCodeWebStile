@@ -34,9 +34,12 @@ export const update = async (req, res, next) => {
 
 // Đoạn này giúp xóa người dùng thông qua ID ra khỏi database
 export const deleteUser = async (req, res, next) => {
+    // So sánh giữa id ULR và id người dùng đăng nhập
     if (req.params.id === req.user.id) {
         try {
+            // Lấy ra người dùng theo id đó và xóa ra khỏi csdl
             await User.findByIdAndDelete(
+                // Dựa trên id người dùng cần xóa
                 req.params.id
             );
             res.status(200).json("Xóa thành công !!")
@@ -47,20 +50,28 @@ export const deleteUser = async (req, res, next) => {
         return next(createError(403, "Khong cập nhật được dữ liệu"));
     }
 }
+
+// Tìm kiếm người dùng thông qua id
 export const getUser = async (req, res, next) => {
     try {
+        // Tìm kiếm id người dùng findById
         await User.findById(req.user.id)
         res.status(200).json("Xuất người dùng thành công")
     } catch (err) {
         next(err)
     }
 }
+// Thực hiện thao tác đăng ký người dùng cho người dùng khác
 export const subscribe = async (req, res, next) => {
     try {
+        // Tìm và cập nhật người dùng
         await User.findByIdAndUpdate(req.user.id, {
+            // Sử dụng $push để thêm id của người dùng đã đăng ký vào subscribersUser
             $push: { subscribersUser: req.params.id }
         })
         await User.findByIdAndUpdate(req.params.id, {
+            // Sử dụng $inc để tăng subscribers: + 1
+            // Cứ mỗi người dùng đăng ký tăng lên 1
             $inc: { subscribers: 1 }
         })
         res.status(200).json("Đăng ký thành công !")
@@ -68,12 +79,18 @@ export const subscribe = async (req, res, next) => {
         next(err)
     }
 }
+
+
+// Hủy đăng kỳ người dùng mà mình đã đăng ký
 export const unSubscribe = async (req, res, next) => {
     try {
+        // Tìm ra người người dùng và cập nhật thông qua id
         await User.findByIdAndUpdate(req.user.id, {
+            // $pull Dùng để loại bỏ id người dùng đã đăng ký ra khỏi mảng subscribersUser
             $pull: { subscribersUser: req.params.id }
         })
         await User.findByIdAndUpdate(req.params.id, {
+            // $inc giúp giảm đi 1 người đã đăng ký sau khi hủy đăng ký
             $inc: { subscribers: -1 }
         })
         res.status(200).json("Đăng ký thành công !")
