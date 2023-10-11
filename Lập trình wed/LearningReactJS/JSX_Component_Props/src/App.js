@@ -6,16 +6,16 @@ function App() {
   const User = (props) => { // props là một đối tượng chứa các thuộc tính và giá trị tương ứng được truyền vào component cha
     return (
       <>
-        <h1>{props.name}</h1> 
+        <h1>{props.name}</h1>
         <h1>{props.age}</h1>
         <h1>{props.cty}</h1>
       </>
     )
   };
   return (
-    <div className="App">      
-      <User name={"NguyenThanhHieu"} age={24} cty={"FPT  DEVELOPMENT"}/>  {/*đây cũng là 1 Component con */}
-      <Food  nameFood={"Cá rô chiên xù"} price={200} sumMenu={1000} />  {/*đây cũng là 1 Component con */}
+    <div className="App">
+      <User name={"NguyenThanhHieu"} age={24} cty={"FPT  DEVELOPMENT"} />  {/*đây cũng là 1 Component con */}
+      <Food nameFood={"Cá rô chiên xù"} price={200} sumMenu={1000} />  {/*đây cũng là 1 Component con */}
     </div>
   );
 }
